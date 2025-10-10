@@ -115,7 +115,7 @@ def get_workday_data(soap_body_search_documents):
             pass
         raise
     request_dict = xmltodict.parse(soaprequest.content)
-    print("Search response:", json.dumps(request_dict, indent=4))
+    #print("Search response:", json.dumps(request_dict, indent=4))
     return request_dict
 
 
@@ -192,26 +192,27 @@ def extract_values_from_search(search_data):
 
     For each returned document, append a value (or None) to the module-level lists.
     """
-    # Locate the list of documents robustly
+    # Step 1: Locate the list of documents robustly
+    # Navigate through the SOAP response structure to find the list of documents.
     env = search_data.get('env:Envelope') or search_data.get('soapenv:Envelope') or search_data
     body = env.get('env:Body') or env.get('soapenv:Body') or env.get('Body') or {}
     resp = body.get('wd:Get_Taxable_Document_for_Tax_Calculation_Response') or body.get('Get_Taxable_Document_for_Tax_Calculation_Response') or {}
     resp_data = resp.get('wd:Response_Data') or resp.get('Response_Data') or {}
     items = resp_data.get('wd:Taxable_Document_for_Tax_Calculation') or resp_data.get('Taxable_Document_for_Tax_Calculation') or []
-    
-    #save resp to json for debugging
+
+    # Step 2: Save the response to a JSON file for debugging
     try:
         with open('search_response.json', 'w', encoding='utf-8') as fh:
             json.dump(items, fh, indent=2)
         print('Wrote search_response.json for debugging')
     except Exception as e:
         print('Failed to write search_response.json:', e)
- 
-    
+
+    # Step 3: Ensure the items are in list format
     if isinstance(items, dict):
         items = [items]
 
-    # Prepare output lists
+    # Step 4: Prepare output lists to store extracted values
     doc_refs = []
     line_refs = []
     company_ids = []
@@ -228,6 +229,7 @@ def extract_values_from_search(search_data):
     _Currency_Reference = []
     _Document_Date = []
 
+    # Additional lists for other extracted fields
     _Bill_To_Customer_Reference = []
     _Sold_To_Customer_Reference = []
     _Worktags_Reference = []
@@ -246,74 +248,75 @@ def extract_values_from_search(search_data):
     _Address_Format_Type=[]
     _Formatted_Address=[]
 
-
-    def pick_wid(id_node):
+    # Step 5: Define helper functions for extracting and collecting WIDs
+    def pick_wid(id_node, target_list):
+        """Extract a WID from a node and append it to the target list."""
         if isinstance(id_node, list):
-            # prefer an entry whose type indicates WID, otherwise first with #text
             for e in id_node:
                 if isinstance(e, dict) and (e.get('@wd:type') == 'WID' or e.get('@type') == 'WID'):
+                    target_list.append(e.get('#text'))
                     return e.get('#text')
-            for e in id_node:
-                if isinstance(e, dict) and '#text' in e:
-                    return e.get('#text')
+                for e in id_node:
+                    if isinstance(e, dict) and '#text' in e:
+                        target_list.append(e.get('#text'))
+                        return e.get('#text')
             return None
         if isinstance(id_node, dict):
+            target_list.append(id_node.get('#text'))
             return id_node.get('#text')
         if isinstance(id_node, str):
+            target_list.append(id_node)
             return id_node
         return None
 
-    # Helper: collect all WID values anywhere under a node
-    def collect_wids(node, found=None):
+    def collect_wids(node, found=None, parent_tag=None, grandparent_tag=None):
+        """Recursively collect all WID values from a node and save them in lists matching the grandparent tag name.
+        Filters values based on specific attributes like '@wd:type'.
+        """
         if found is None:
-            found = []
+            found = {}
         if isinstance(node, dict):
-            # If this node looks like an ID with type attributes, check it
-            # Many ID nodes are like {'@wd:type': 'WID', '#text': '...'}
-            if ('@wd:type' in node and node.get('@wd:type') == 'WID' and '#text' in node):
-                found.append(node.get('#text'))
-            if ('@type' in node and node.get('@type') == 'WID' and '#text' in node):
-                found.append(node.get('#text'))
-            # Recurse into children
+            if ('@wd:type' in node and '#text' in node):
+                # Save values based on the grandparent tag
+                key = f"{grandparent_tag}_{node.get('@wd:type')}"
+                if key not in found:
+                    found[key] = []
+                found[key].append(node.get('#text'))
             for k, v in node.items():
                 if k in ('@wd:type', '@type', '#text'):
                     continue
-                collect_wids(v, found)
+                collect_wids(v, found, parent_tag=k, grandparent_tag=parent_tag)
         elif isinstance(node, list):
             for item in node:
-                collect_wids(item, found)
+                collect_wids(item, found, parent_tag=parent_tag, grandparent_tag=grandparent_tag)
         return found
 
+    # Step 6: Iterate over each document and extract values
     for item in items:
-        # Document reference WID
+        # Extract document reference WID
         doc_ref_node = item.get('wd:Taxable_Document_for_Tax_Calculation_Reference', {}).get('wd:ID')
-        doc_wid = pick_wid(doc_ref_node)
+        doc_wid = pick_wid(doc_ref_node, _Taxable_Document_for_Tax_Calculation_Reference)
         doc_refs.append(doc_wid)
 
-        # Collect all WIDs present in this document item
+        # Collect all WIDs present in this document
         per_doc_wids = collect_wids(item)
-        # store per-document WIDs
-        # We'll add a list to hold all per-document wid lists later
-        # (we'll build a combined list after the loop)
-        # append to a temporary list
         if 'document_wids_local' not in locals():
             document_wids_local = []
         document_wids_local.append(per_doc_wids)
 
-        # Header and company
+        # Extract header and company information
         header = item.get('wd:Taxable_Document_for_Tax_Calculation_Data', {}).get('wd:Taxable_Document_Header_for_Tax_Calculation_Data', {})
         comp_node = header.get('wd:Company_Reference', {}).get('wd:ID')
-        comp_wid = pick_wid(comp_node)
+        comp_wid = pick_wid(comp_node, _Company_Reference)
         company_ids.append(comp_wid)
 
-        # Document number, currency, date
+        # Extract document metadata
         document_numbers.append(header.get('wd:Document_Number'))
-        # Currency: try to get Currency_ID or Currency code
         curr_node = header.get('wd:Currency_Reference', {}).get('wd:ID')
         currency = None
         if isinstance(curr_node, list):
             for e in curr_node:
-                if isinstance(e, dict) and (e.get('@wd:type') == 'Currency_ID' or e.get('@type') == 'Currency_ID' or e.get('@wd:type') == 'Currency_ID'):
+                if isinstance(e, dict) and (e.get('@wd:type') == 'Currency_ID' or e.get('@type') == 'Currency_ID'):
                     currency = e.get('#text'); break
             if not currency:
                 for e in curr_node:
@@ -325,26 +328,25 @@ def extract_values_from_search(search_data):
 
         document_dates.append(header.get('wd:Document_Date'))
 
-        # Supplier invoice header
+        # Extract supplier invoice information
         supplier_hdr = header.get('wd:Supplier_Invoice_Header_for_Tax_Calculation_Data', {})
         supplier_invoice_numbers.append(supplier_hdr.get('wd:Supplier_Invoice_Number'))
         entered_tax_amounts.append(supplier_hdr.get('wd:Entered_Tax_Amount'))
         amount_inclusive_of_taxes.append(supplier_hdr.get('wd:Amount_Inclusive_of_Tax'))
 
-        # Line reference
+        # Extract line reference
         line = item.get('wd:Taxable_Document_Line_for_Tax_Calculation_Data', {})
         line_refs.append(line.get('wd:Line_Reference_ID'))
 
-    # Assign to module-level variables (preserve names used earlier)
+    # Step 7: Assign extracted values to module-level variables
     global document_reference, taxable_document_line_reference, company_reference, tax_rate_taxable_amount, tax_rate_tax_amount
-    # Map extracted lists to variables available in the module
     document_reference = doc_refs
     taxable_document_line_reference = line_refs
     company_reference = company_ids
-    # Document-level WIDs (list per document) and flattened all WIDs
+
+    # Step 8: Flatten and deduplicate WIDs
     global document_wids, all_wids
     document_wids = document_wids_local if 'document_wids_local' in locals() else []
-    # Flatten and dedupe while preserving order
     seen = set()
     all_wids = []
     for lst in document_wids:
@@ -352,9 +354,8 @@ def extract_values_from_search(search_data):
             if w and w not in seen:
                 seen.add(w)
                 all_wids.append(w)
-    # Additional useful lists (not originally top-level variables) - store under new names
-    # Keep original tax fields as empty or None lists (unless present later)
-    # Expose some extracted fields for convenience
+
+    # Step 9: Expose additional extracted fields
     global extracted_document_number, extracted_currency, extracted_document_date, extracted_supplier_invoice_number, extracted_entered_tax_amount, extracted_amount_inclusive_of_tax
     extracted_document_number = document_numbers
     extracted_currency = currency_codes
@@ -363,10 +364,12 @@ def extract_values_from_search(search_data):
     extracted_entered_tax_amount = entered_tax_amounts
     extracted_amount_inclusive_of_tax = amount_inclusive_of_taxes
 
-    # Print a quick summary
+    # Step 10: Print a quick summary of extracted values
     print("Extracted document_reference (WID) count:", len(document_reference))
     print("Extracted taxable_document_line_reference count:", len(taxable_document_line_reference))
     print("Extracted company_reference count:", len(company_reference))
+
+    # Step 11: Return extracted data as a dictionary
     return {
         'document_reference': document_reference,
         'taxable_document_line_reference': taxable_document_line_reference,
@@ -451,14 +454,14 @@ def main():
             process_ids.append(None)
             continue
         payload = build_import_body_for_doc_id(doc_id)
-        print("Built import payload (truncated):", payload[:500])
+    #    print("Built import payload (truncated):", payload[:500])
         try:
             resp = post_with_retries(payload)
             # Use the reusable transformer to interpret the response
             transformed = transform_workday_data(resp)
             pid = transformed.get('import_process_id') if transformed.get('status') == 'success' else None
             process_ids.append(pid)
-            print(f"Import posted for {doc_id}, transform status: {transformed.get('status')}, process id: {pid}")
+           # print(f"Import posted for {doc_id}, transform status: {transformed.get('status')}, process id: {pid}")
         except Exception as e:
             print(f"Import failed for {doc_id}: {e}")
 
