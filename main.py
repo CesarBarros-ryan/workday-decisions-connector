@@ -3,15 +3,37 @@ import requests
 import xmltodict
 import json
 import textwrap
+import argparse
 
 # Load environment variables from a .env file when python-dotenv is installed.
 # This keeps credentials out of source control. If python-dotenv isn't
 # available we'll fall back to the current process environment variables.
 try:
-    from dotenv import load_dotenv
-    load_dotenv()
+    from dotenv import load_dotenv, find_dotenv
+    # Prefer find_dotenv so we can report the resolved path and failures clearly.
+    dotenv_path = find_dotenv()
+    if dotenv_path:
+        try:
+            loaded = load_dotenv(dotenv_path)
+            if not loaded:
+                print(f"Warning: found .env at {dotenv_path} but load_dotenv returned False")
+        except Exception as e:
+            print(f"Error loading .env from {dotenv_path}: {e}")
+    else:
+        # No .env found by find_dotenv; still check for a local .env file and report
+        if os.path.exists('.env'):
+            try:
+                loaded = load_dotenv('.env')
+                if not loaded:
+                    print("Warning: .env exists but load_dotenv returned False")
+            except Exception as e:
+                print(f"Error loading local .env: {e}")
+        else:
+            # No .env file present; that's okay if env vars are provided externally
+            pass
 except Exception:
-    # dotenv isn't installed or failed to load; continue using os.environ
+    # dotenv isn't installed or failed to import; continue using os.environ
+    # We'll not treat this as fatal, but surface a helpful hint below if credentials are missing.
     pass
 
 # --- Workday SOAP API Setup ---
@@ -82,7 +104,16 @@ def get_search_soap_body():
 def get_workday_data(soap_body_search_documents):
     """Send the search SOAP request and return the parsed XML as a dict."""
     soaprequest = requests.post(workday_url, data=soap_body_search_documents, headers={"Content-Type": "text/xml"})
-    soaprequest.raise_for_status()
+    # Provide response body for debugging when non-200
+    try:
+        soaprequest.raise_for_status()
+    except Exception as e:
+        try:
+            print("Workday search response status:", soaprequest.status_code)
+            print("Workday search response body:\n", soaprequest.text)
+        except Exception:
+            pass
+        raise
     request_dict = xmltodict.parse(soaprequest.content)
     print("Search response:", json.dumps(request_dict, indent=4))
     return request_dict
@@ -138,7 +169,14 @@ def post_with_retries(payload, max_retries=3, backoff_sec=2):
     for attempt in range(1, max_retries + 1):
         try:
             resp = requests.post(workday_url, data=payload, headers={"Content-Type": "text/xml"})
-            resp.raise_for_status()
+            # If non-200, print status and body to help debugging
+            if resp.status_code >= 400:
+                try:
+                    print(f"Workday import response status: {resp.status_code}")
+                    print("Workday import response body:\n", resp.text)
+                except Exception:
+                    pass
+                resp.raise_for_status()
             return xmltodict.parse(resp.content)
         except Exception as e:
             last_exc = e
@@ -160,6 +198,16 @@ def extract_values_from_search(search_data):
     resp = body.get('wd:Get_Taxable_Document_for_Tax_Calculation_Response') or body.get('Get_Taxable_Document_for_Tax_Calculation_Response') or {}
     resp_data = resp.get('wd:Response_Data') or resp.get('Response_Data') or {}
     items = resp_data.get('wd:Taxable_Document_for_Tax_Calculation') or resp_data.get('Taxable_Document_for_Tax_Calculation') or []
+    
+    #save resp to json for debugging
+    try:
+        with open('search_response.json', 'w', encoding='utf-8') as fh:
+            json.dump(items, fh, indent=2)
+        print('Wrote search_response.json for debugging')
+    except Exception as e:
+        print('Failed to write search_response.json:', e)
+ 
+    
     if isinstance(items, dict):
         items = [items]
 
@@ -173,6 +221,31 @@ def extract_values_from_search(search_data):
     supplier_invoice_numbers = []
     entered_tax_amounts = []
     amount_inclusive_of_taxes = []
+
+    _Taxable_Document_for_Tax_Calculation_Reference = []
+    _Company_Reference = []
+    _Document_Number = []
+    _Currency_Reference = []
+    _Document_Date = []
+
+    _Bill_To_Customer_Reference = []
+    _Sold_To_Customer_Reference = []
+    _Worktags_Reference = []
+    _Customer_Category_of_Bill_to_Customer_Reference = []
+    _Taxable_Document_Line_for_Tax_Calculation_Data = []
+    _Line_Reference_ID = []
+    _Company_Reference = []
+    _Item_Reference = []
+    _Accounting_Category_Reference = []
+    _Quantity = []
+    _Unit_Cost = []
+    _Extended_Amount = []
+    _Customer_Invoice_Line_for_Tax_Calculation_Data = []
+    _Supplier_Invoice_Line_for_Tax_Calculation_Data = []
+    _Supplier_Bill_To_Address_Data = []
+    _Address_Format_Type=[]
+    _Formatted_Address=[]
+
 
     def pick_wid(id_node):
         if isinstance(id_node, list):
@@ -336,11 +409,26 @@ def transform_workday_data(data):
         }
 
 
-if __name__ == '__main__':
+def _parse_args():
+    p = argparse.ArgumentParser()
+    p.add_argument('--dry-run', action='store_true', help='Print SOAP payloads and do not post to Workday')
+    return p.parse_args()
+
+
+def main():
+    args = _parse_args()
     # 1) Call Workday to get documents
     try:
         # Use the search SOAP body to retrieve documents
-        search_response = get_workday_data(get_search_soap_body())
+        if args.dry_run:
+            search_body = get_search_soap_body()
+            print('--- DRY RUN: Search SOAP body ---')
+            print(search_body)
+            # We can't extract results without a real response, so stop here for dry-run
+            print('Dry run complete: no network requests were made.')
+            return
+        else:
+            search_response = get_workday_data(get_search_soap_body())
     except Exception as e:
         print("Failed to get workday data:", str(e))
         raise
@@ -375,6 +463,10 @@ if __name__ == '__main__':
             print(f"Import failed for {doc_id}: {e}")
 
     print("All import process ids:", process_ids)
+
+
+if __name__ == '__main__':
+    main()
 
 # --- Send to Decisions API ---
 '''decisions_url = "https://your-decisions-instance.com/api/flow/trigger"

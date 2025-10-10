@@ -1,0 +1,2619 @@
+[
+  {
+    "wd:Taxable_Document_for_Tax_Calculation_Reference": {
+      "wd:ID": [
+        {
+          "@wd:type": "WID",
+          "#text": "796aa1abab58900206743dffe07f0000"
+        },
+        {
+          "@wd:type": "Supplier_Invoice_Reference_ID",
+          "#text": "SUPPLIER_INVOICE-6-143226"
+        }
+      ]
+    },
+    "wd:Taxable_Document_for_Tax_Calculation_Data": {
+      "wd:Taxable_Document_Header_for_Tax_Calculation_Data": {
+        "wd:Company_Reference": {
+          "wd:ID": [
+            {
+              "@wd:type": "WID",
+              "#text": "dde36542331f1000b66f45813fbd0000"
+            },
+            {
+              "@wd:type": "Organization_Reference_ID",
+              "#text": "RRO"
+            },
+            {
+              "@wd:type": "Company_Reference_ID",
+              "#text": "RRO"
+            }
+          ]
+        },
+        "wd:Document_Number": "SINV-00142584",
+        "wd:Currency_Reference": {
+          "wd:ID": [
+            {
+              "@wd:type": "WID",
+              "#text": "9e996ffdd3e14da0ba7275d5400bafd4"
+            },
+            {
+              "@wd:type": "Currency_ID",
+              "#text": "USD"
+            },
+            {
+              "@wd:type": "Currency_Numeric_Code",
+              "#text": "840"
+            }
+          ]
+        },
+        "wd:Document_Date": "2025-09-26",
+        "wd:Supplier_Invoice_Header_for_Tax_Calculation_Data": {
+          "wd:Supplier_Reference": {
+            "wd:ID": [
+              {
+                "@wd:type": "WID",
+                "#text": "b281143cb2ef1006d354b950487c80bb"
+              },
+              {
+                "@wd:type": "Supplier_Reference_ID",
+                "#text": "RAM00450US"
+              },
+              {
+                "@wd:type": "Supplier_ID",
+                "#text": "S-00005068"
+              }
+            ]
+          },
+          "wd:Supplier_Bill-To_Address_Data": {
+            "wd:Supplier_Bill-To_Address_Data": {
+              "@wd:Address_Format_Type": "Basic",
+              "@wd:Formatted_Address": "410 S Main St Ste A&#xa;Tulsa, OK 74103-5003&#xa;United States of America",
+              "@wd:Defaulted_Business_Site_Address": "1",
+              "wd:Country_Reference": {
+                "wd:ID": [
+                  {
+                    "@wd:type": "WID",
+                    "#text": "bc33aa3152ec42d4995f4791a106ed09"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-1_Alpha-2_Code",
+                    "#text": "US"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-1_Alpha-3_Code",
+                    "#text": "USA"
+                  },
+                  {
+                    "@wd:type": "OPM_Country_Code",
+                    "#text": "US"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-1_Numeric-3_Code",
+                    "#text": "840"
+                  }
+                ]
+              },
+              "wd:Last_Modified": "2024-08-26T03:37:04.781-07:00",
+              "wd:Address_Line_Data": {
+                "@wd:Type": "ADDRESS_LINE_1",
+                "@wd:Descriptor": "Address Line 1",
+                "#text": "410 S Main St Ste A"
+              },
+              "wd:Municipality": "Tulsa",
+              "wd:Country_Region_Reference": {
+                "wd:ID": [
+                  {
+                    "@wd:type": "WID",
+                    "#text": "205ef21c556342268847466c48ec5a8c"
+                  },
+                  {
+                    "@wd:type": "Country_Region_ID",
+                    "#text": "USA-OK"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-2_Code",
+                    "#text": "OK"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-2_Country-Region_Code",
+                    "#text": "US-OK"
+                  }
+                ]
+              },
+              "wd:Country_Region_Descriptor": "Oklahoma",
+              "wd:Postal_Code": "74103-5003",
+              "wd:Address_Reference": {
+                "wd:ID": [
+                  {
+                    "@wd:type": "WID",
+                    "#text": "812ee401720e1000a654cd984c090001"
+                  },
+                  {
+                    "@wd:type": "Address_ID",
+                    "#text": "ADDRESS_REFERENCE-3-13530288"
+                  }
+                ]
+              },
+              "wd:Address_ID": "ADDRESS_REFERENCE-3-13530288"
+            }
+          },
+          "wd:Entered_Tax_Amount": "0",
+          "wd:Supplier_Invoice_Number": "test1",
+          "wd:Down_Payment": "0",
+          "wd:Amount_Inclusive_of_Tax": "0"
+        }
+      },
+      "wd:Taxable_Document_Line_for_Tax_Calculation_Data": {
+        "wd:Line_Reference_ID": "SUPPLIER_INVOICE_LINE-6-267667",
+        "wd:Company_Reference": {
+          "wd:ID": [
+            {
+              "@wd:type": "WID",
+              "#text": "dde36542331f1000b66f45813fbd0000"
+            },
+            {
+              "@wd:type": "Organization_Reference_ID",
+              "#text": "RRO"
+            },
+            {
+              "@wd:type": "Company_Reference_ID",
+              "#text": "RRO"
+            }
+          ]
+        },
+        "wd:Accounting_Category_Reference": {
+          "wd:ID": [
+            {
+              "@wd:type": "WID",
+              "#text": "e65354d6fcc801e7d7db46d667016397"
+            },
+            {
+              "@wd:type": "Spend_Category_ID",
+              "#text": "LEASE_PMT_OFFICE_SPACE"
+            }
+          ]
+        },
+        "wd:Quantity": "10",
+        "wd:Unit_of_Measure_Reference": {
+          "wd:ID": [
+            {
+              "@wd:type": "WID",
+              "#text": "9c5ef1aaea1c10506a65b069f3d779a8"
+            },
+            {
+              "@wd:type": "UN_CEFACT_Common_Code_ID",
+              "#text": "EA"
+            }
+          ]
+        },
+        "wd:Unit_Cost": "6000",
+        "wd:Extended_Amount": "60000",
+        "wd:Worktags_Reference": [
+          {
+            "wd:ID": [
+              {
+                "@wd:type": "WID",
+                "#text": "9844436666b710053c6da9a17f52dd36"
+              },
+              {
+                "@wd:type": "Custom_Worktag_09_ID",
+                "#text": "REV_GEN"
+              }
+            ]
+          },
+          {
+            "wd:ID": [
+              {
+                "@wd:type": "WID",
+                "#text": "8e540ad852971059242fdb526822c7a9"
+              },
+              {
+                "@wd:type": "Custom_Worktag_08_ID",
+                "#text": "COS"
+              }
+            ]
+          },
+          {
+            "wd:ID": [
+              {
+                "@wd:type": "WID",
+                "#text": "9844436666b7100501a2f31fff84a6c6"
+              },
+              {
+                "@wd:type": "Customer_Reference_ID",
+                "#text": "27324"
+              },
+              {
+                "@wd:type": "Customer_ID",
+                "#text": "27324"
+              }
+            ]
+          },
+          {
+            "wd:ID": [
+              {
+                "@wd:type": "WID",
+                "#text": "ba5128dd27c51000c5c7c12cf0690000"
+              },
+              {
+                "@wd:type": "Organization_Reference_ID",
+                "#text": "RPA_211"
+              },
+              {
+                "@wd:type": "Custom_Organization_Reference_ID",
+                "#text": "RPA_211"
+              }
+            ]
+          },
+          {
+            "wd:ID": [
+              {
+                "@wd:type": "WID",
+                "#text": "9844436666b710053c6dcdf6d643dd88"
+              },
+              {
+                "@wd:type": "Custom_Worktag_4_ID",
+                "#text": "IMP"
+              }
+            ]
+          },
+          {
+            "wd:ID": [
+              {
+                "@wd:type": "WID",
+                "#text": "9844436666b710053c6ddc724e65dd98"
+              },
+              {
+                "@wd:type": "Custom_Worktag_3_ID",
+                "#text": "Blended Hourly"
+              }
+            ]
+          },
+          {
+            "wd:ID": [
+              {
+                "@wd:type": "WID",
+                "#text": "735a8e93eece1075faedf2bb78807aee"
+              },
+              {
+                "@wd:type": "Organization_Reference_ID",
+                "#text": "CC_1040"
+              },
+              {
+                "@wd:type": "Cost_Center_Reference_ID",
+                "#text": "CC_1040"
+              }
+            ]
+          },
+          {
+            "wd:ID": [
+              {
+                "@wd:type": "WID",
+                "#text": "9844436666b710053c6df73e547bddce"
+              },
+              {
+                "@wd:type": "Custom_Worktag_2_ID",
+                "#text": "MC"
+              }
+            ]
+          },
+          {
+            "wd:ID": [
+              {
+                "@wd:type": "WID",
+                "#text": "fb3339f0313701c5541ad4971b019c80"
+              },
+              {
+                "@wd:type": "Project_ID",
+                "#text": "273248000.006"
+              }
+            ]
+          }
+        ],
+        "wd:Supplier_Invoice_Line_for_Tax_Calculation_Data": null
+      }
+    }
+  },
+  {
+    "wd:Taxable_Document_for_Tax_Calculation_Reference": {
+      "wd:ID": [
+        {
+          "@wd:type": "WID",
+          "#text": "42259d037f4e90015177c3ded4e70000"
+        },
+        {
+          "@wd:type": "Customer_Invoice_Reference_ID",
+          "#text": "CUSTOMER_INVOICE-6-723728"
+        }
+      ]
+    },
+    "wd:Taxable_Document_for_Tax_Calculation_Data": {
+      "wd:Taxable_Document_Header_for_Tax_Calculation_Data": {
+        "wd:Company_Reference": {
+          "wd:ID": [
+            {
+              "@wd:type": "WID",
+              "#text": "dde36542331f1000b66f45813fbd0000"
+            },
+            {
+              "@wd:type": "Organization_Reference_ID",
+              "#text": "RRO"
+            },
+            {
+              "@wd:type": "Company_Reference_ID",
+              "#text": "RRO"
+            }
+          ]
+        },
+        "wd:Document_Number": "822939",
+        "wd:Currency_Reference": {
+          "wd:ID": [
+            {
+              "@wd:type": "WID",
+              "#text": "eef222b9feb644019686f0824464eedc"
+            },
+            {
+              "@wd:type": "Currency_ID",
+              "#text": "RON"
+            },
+            {
+              "@wd:type": "Currency_Numeric_Code",
+              "#text": "946"
+            }
+          ]
+        },
+        "wd:Document_Date": "2025-09-24",
+        "wd:Customer_Invoice_Header_for_Tax_Calculation_Data": {
+          "wd:Bill_To_Customer_Reference": {
+            "wd:ID": [
+              {
+                "@wd:type": "WID",
+                "#text": "85a16048530f1000245f95609e7b0000"
+              },
+              {
+                "@wd:type": "Customer_Reference_ID",
+                "#text": "58061"
+              },
+              {
+                "@wd:type": "Customer_ID",
+                "#text": "58061"
+              }
+            ]
+          },
+          "wd:Sold_To_Customer_Reference": {
+            "wd:ID": [
+              {
+                "@wd:type": "WID",
+                "#text": "85a16048530f1000245f95609e7b0000"
+              },
+              {
+                "@wd:type": "Customer_Reference_ID",
+                "#text": "58061"
+              },
+              {
+                "@wd:type": "Customer_ID",
+                "#text": "58061"
+              }
+            ]
+          },
+          "wd:Worktags_Reference": [
+            {
+              "wd:ID": [
+                {
+                  "@wd:type": "WID",
+                  "#text": "d02b5378d41d01559df06827de651033"
+                },
+                {
+                  "@wd:type": "Organization_Reference_ID",
+                  "#text": "RPA_096"
+                },
+                {
+                  "@wd:type": "Custom_Organization_Reference_ID",
+                  "#text": "RPA_096"
+                }
+              ]
+            },
+            {
+              "wd:ID": [
+                {
+                  "@wd:type": "WID",
+                  "#text": "22dce8e78c011067bf10440032605907"
+                },
+                {
+                  "@wd:type": "Organization_Reference_ID",
+                  "#text": "CC_1028"
+                },
+                {
+                  "@wd:type": "Cost_Center_Reference_ID",
+                  "#text": "CC_1028"
+                }
+              ]
+            },
+            {
+              "wd:ID": [
+                {
+                  "@wd:type": "WID",
+                  "#text": "9844436666b710053c6dcae4df08dd43"
+                },
+                {
+                  "@wd:type": "Custom_Worktag_4_ID",
+                  "#text": "ARV"
+                }
+              ]
+            },
+            {
+              "wd:ID": [
+                {
+                  "@wd:type": "WID",
+                  "#text": "9844436666b710053c6ddcdb85bcdda0"
+                },
+                {
+                  "@wd:type": "Custom_Worktag_3_ID",
+                  "#text": "Performance-based"
+                }
+              ]
+            },
+            {
+              "wd:ID": [
+                {
+                  "@wd:type": "WID",
+                  "#text": "9844436666b710053c6df73e547bddce"
+                },
+                {
+                  "@wd:type": "Custom_Worktag_2_ID",
+                  "#text": "MC"
+                }
+              ]
+            },
+            {
+              "wd:ID": [
+                {
+                  "@wd:type": "WID",
+                  "#text": "8e540ad852971059242fdb526822c7a9"
+                },
+                {
+                  "@wd:type": "Custom_Worktag_08_ID",
+                  "#text": "COS"
+                }
+              ]
+            },
+            {
+              "wd:ID": [
+                {
+                  "@wd:type": "WID",
+                  "#text": "9844436666b710053c6da9a17f52dd36"
+                },
+                {
+                  "@wd:type": "Custom_Worktag_09_ID",
+                  "#text": "REV_GEN"
+                }
+              ]
+            }
+          ],
+          "wd:Customer_Category_of_Bill_to_Customer_Reference": {
+            "wd:ID": [
+              {
+                "@wd:type": "WID",
+                "#text": "9844436666b71003559f4fa1661301cb"
+              },
+              {
+                "@wd:type": "Customer_Category_ID",
+                "#text": "Business Services"
+              }
+            ]
+          }
+        }
+      },
+      "wd:Taxable_Document_Line_for_Tax_Calculation_Data": {
+        "wd:Line_Reference_ID": "CUSTOMER_INVOICE_LINE-6-2038696",
+        "wd:Company_Reference": {
+          "wd:ID": [
+            {
+              "@wd:type": "WID",
+              "#text": "dde36542331f1000b66f45813fbd0000"
+            },
+            {
+              "@wd:type": "Organization_Reference_ID",
+              "#text": "RRO"
+            },
+            {
+              "@wd:type": "Company_Reference_ID",
+              "#text": "RRO"
+            }
+          ]
+        },
+        "wd:Item_Reference": {
+          "wd:ID": [
+            {
+              "@wd:type": "WID",
+              "#text": "b955afeea4a5010f96af5f2a640e73cb"
+            },
+            {
+              "@wd:type": "Sales_Item_ID",
+              "#text": "Valuation Services"
+            }
+          ]
+        },
+        "wd:Accounting_Category_Reference": {
+          "wd:ID": [
+            {
+              "@wd:type": "WID",
+              "#text": "9844436666b710035bf8bfcd082d070a"
+            },
+            {
+              "@wd:type": "Revenue_Category_ID",
+              "#text": "HOURLY_FEES"
+            }
+          ]
+        },
+        "wd:Quantity": "1",
+        "wd:Unit_Cost": "0",
+        "wd:Extended_Amount": "1000",
+        "wd:Customer_Invoice_Line_for_Tax_Calculation_Data": null
+      }
+    }
+  },
+  {
+    "wd:Taxable_Document_for_Tax_Calculation_Reference": {
+      "wd:ID": [
+        {
+          "@wd:type": "WID",
+          "#text": "796aa1abab589001b74899c151a70000"
+        },
+        {
+          "@wd:type": "Customer_Invoice_Reference_ID",
+          "#text": "CUSTOMER_INVOICE-6-723735"
+        }
+      ]
+    },
+    "wd:Taxable_Document_for_Tax_Calculation_Data": {
+      "wd:Taxable_Document_Header_for_Tax_Calculation_Data": {
+        "wd:Company_Reference": {
+          "wd:ID": [
+            {
+              "@wd:type": "WID",
+              "#text": "dde36542331f1000b66f45813fbd0000"
+            },
+            {
+              "@wd:type": "Organization_Reference_ID",
+              "#text": "RRO"
+            },
+            {
+              "@wd:type": "Company_Reference_ID",
+              "#text": "RRO"
+            }
+          ]
+        },
+        "wd:Document_Number": "822940",
+        "wd:Currency_Reference": {
+          "wd:ID": [
+            {
+              "@wd:type": "WID",
+              "#text": "9e996ffdd3e14da0ba7275d5400bafd4"
+            },
+            {
+              "@wd:type": "Currency_ID",
+              "#text": "USD"
+            },
+            {
+              "@wd:type": "Currency_Numeric_Code",
+              "#text": "840"
+            }
+          ]
+        },
+        "wd:Document_Date": "2025-09-25",
+        "wd:Customer_Invoice_Header_for_Tax_Calculation_Data": {
+          "wd:Bill_To_Customer_Reference": {
+            "wd:ID": [
+              {
+                "@wd:type": "WID",
+                "#text": "9844436666b7100501a2f31fff84a6c6"
+              },
+              {
+                "@wd:type": "Customer_Reference_ID",
+                "#text": "27324"
+              },
+              {
+                "@wd:type": "Customer_ID",
+                "#text": "27324"
+              }
+            ]
+          },
+          "wd:Customer_Bill-To_Address_Data": {
+            "wd:Customer_Bill-To_Address_Data": {
+              "@wd:Address_Format_Type": "Basic",
+              "@wd:Formatted_Address": "111 W Java Drive&#xa;Sunnyvale, CA 94089&#xa;United States of America",
+              "@wd:Defaulted_Business_Site_Address": "1",
+              "wd:Country_Reference": {
+                "wd:ID": [
+                  {
+                    "@wd:type": "WID",
+                    "#text": "bc33aa3152ec42d4995f4791a106ed09"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-1_Alpha-2_Code",
+                    "#text": "US"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-1_Alpha-3_Code",
+                    "#text": "USA"
+                  },
+                  {
+                    "@wd:type": "OPM_Country_Code",
+                    "#text": "US"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-1_Numeric-3_Code",
+                    "#text": "840"
+                  }
+                ]
+              },
+              "wd:Last_Modified": "2018-04-26T05:40:24.158-07:00",
+              "wd:Address_Line_Data": {
+                "@wd:Type": "ADDRESS_LINE_1",
+                "@wd:Descriptor": "Address Line 1",
+                "#text": "111 W Java Drive"
+              },
+              "wd:Municipality": "Sunnyvale",
+              "wd:Country_Region_Reference": {
+                "wd:ID": [
+                  {
+                    "@wd:type": "WID",
+                    "#text": "ec3d210e4240442e99a28fa70419aec5"
+                  },
+                  {
+                    "@wd:type": "Country_Region_ID",
+                    "#text": "USA-CA"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-2_Code",
+                    "#text": "CA"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-2_Country-Region_Code",
+                    "#text": "US-CA"
+                  },
+                  {
+                    "@wd:type": "OPM_Country_Subdivision_Code",
+                    "#text": "US-CA"
+                  }
+                ]
+              },
+              "wd:Country_Region_Descriptor": "California",
+              "wd:Postal_Code": "94089",
+              "wd:Address_Reference": {
+                "wd:ID": [
+                  {
+                    "@wd:type": "WID",
+                    "#text": "4e2afab661ef01bd31e88dd5ed1457f4"
+                  },
+                  {
+                    "@wd:type": "Address_ID",
+                    "#text": "ADDRESS_REFERENCE-3-13067610"
+                  }
+                ]
+              },
+              "wd:Address_ID": "ADDRESS_REFERENCE-3-13067610"
+            }
+          },
+          "wd:Sold_To_Customer_Reference": {
+            "wd:ID": [
+              {
+                "@wd:type": "WID",
+                "#text": "9844436666b7100501a2f31fff84a6c6"
+              },
+              {
+                "@wd:type": "Customer_Reference_ID",
+                "#text": "27324"
+              },
+              {
+                "@wd:type": "Customer_ID",
+                "#text": "27324"
+              }
+            ]
+          },
+          "wd:Customer_Sold-To_Address_Data": {
+            "wd:Customer_Sold-To_Address_Data": {
+              "@wd:Address_Format_Type": "Basic",
+              "@wd:Formatted_Address": "111 W Java Drive&#xa;Sunnyvale, CA 94089&#xa;United States of America",
+              "@wd:Defaulted_Business_Site_Address": "1",
+              "wd:Country_Reference": {
+                "wd:ID": [
+                  {
+                    "@wd:type": "WID",
+                    "#text": "bc33aa3152ec42d4995f4791a106ed09"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-1_Alpha-2_Code",
+                    "#text": "US"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-1_Alpha-3_Code",
+                    "#text": "USA"
+                  },
+                  {
+                    "@wd:type": "OPM_Country_Code",
+                    "#text": "US"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-1_Numeric-3_Code",
+                    "#text": "840"
+                  }
+                ]
+              },
+              "wd:Last_Modified": "2018-04-26T05:40:24.158-07:00",
+              "wd:Address_Line_Data": {
+                "@wd:Type": "ADDRESS_LINE_1",
+                "@wd:Descriptor": "Address Line 1",
+                "#text": "111 W Java Drive"
+              },
+              "wd:Municipality": "Sunnyvale",
+              "wd:Country_Region_Reference": {
+                "wd:ID": [
+                  {
+                    "@wd:type": "WID",
+                    "#text": "ec3d210e4240442e99a28fa70419aec5"
+                  },
+                  {
+                    "@wd:type": "Country_Region_ID",
+                    "#text": "USA-CA"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-2_Code",
+                    "#text": "CA"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-2_Country-Region_Code",
+                    "#text": "US-CA"
+                  },
+                  {
+                    "@wd:type": "OPM_Country_Subdivision_Code",
+                    "#text": "US-CA"
+                  }
+                ]
+              },
+              "wd:Country_Region_Descriptor": "California",
+              "wd:Postal_Code": "94089",
+              "wd:Address_Reference": {
+                "wd:ID": [
+                  {
+                    "@wd:type": "WID",
+                    "#text": "4e2afab661ef01bd31e88dd5ed1457f4"
+                  },
+                  {
+                    "@wd:type": "Address_ID",
+                    "#text": "ADDRESS_REFERENCE-3-13067610"
+                  }
+                ]
+              },
+              "wd:Address_ID": "ADDRESS_REFERENCE-3-13067610"
+            }
+          },
+          "wd:Worktags_Reference": [
+            {
+              "wd:ID": [
+                {
+                  "@wd:type": "WID",
+                  "#text": "735a8e93eece1075faedf2bb78807aee"
+                },
+                {
+                  "@wd:type": "Organization_Reference_ID",
+                  "#text": "CC_1040"
+                },
+                {
+                  "@wd:type": "Cost_Center_Reference_ID",
+                  "#text": "CC_1040"
+                }
+              ]
+            },
+            {
+              "wd:ID": [
+                {
+                  "@wd:type": "WID",
+                  "#text": "9844436666b710053c6df73e547bddce"
+                },
+                {
+                  "@wd:type": "Custom_Worktag_2_ID",
+                  "#text": "MC"
+                }
+              ]
+            },
+            {
+              "wd:ID": [
+                {
+                  "@wd:type": "WID",
+                  "#text": "d02b5378d41d011e9e143127de65d932"
+                },
+                {
+                  "@wd:type": "Organization_Reference_ID",
+                  "#text": "RPA_036"
+                },
+                {
+                  "@wd:type": "Custom_Organization_Reference_ID",
+                  "#text": "RPA_036"
+                }
+              ]
+            },
+            {
+              "wd:ID": [
+                {
+                  "@wd:type": "WID",
+                  "#text": "9844436666b710053c6ddc724e65dd98"
+                },
+                {
+                  "@wd:type": "Custom_Worktag_3_ID",
+                  "#text": "Blended Hourly"
+                }
+              ]
+            },
+            {
+              "wd:ID": [
+                {
+                  "@wd:type": "WID",
+                  "#text": "8e540ad852971059242fdb526822c7a9"
+                },
+                {
+                  "@wd:type": "Custom_Worktag_08_ID",
+                  "#text": "COS"
+                }
+              ]
+            },
+            {
+              "wd:ID": [
+                {
+                  "@wd:type": "WID",
+                  "#text": "9844436666b710053c6da9a17f52dd36"
+                },
+                {
+                  "@wd:type": "Custom_Worktag_09_ID",
+                  "#text": "REV_GEN"
+                }
+              ]
+            },
+            {
+              "wd:ID": [
+                {
+                  "@wd:type": "WID",
+                  "#text": "9844436666b710053c6dcdf6d643dd88"
+                },
+                {
+                  "@wd:type": "Custom_Worktag_4_ID",
+                  "#text": "IMP"
+                }
+              ]
+            }
+          ],
+          "wd:Customer_Category_of_Bill_to_Customer_Reference": {
+            "wd:ID": [
+              {
+                "@wd:type": "WID",
+                "#text": "9844436666b71003559f4fa1661301cb"
+              },
+              {
+                "@wd:type": "Customer_Category_ID",
+                "#text": "Business Services"
+              }
+            ]
+          }
+        }
+      },
+      "wd:Taxable_Document_Line_for_Tax_Calculation_Data": {
+        "wd:Line_Reference_ID": "CUSTOMER_INVOICE_LINE-6-2038697",
+        "wd:Company_Reference": {
+          "wd:ID": [
+            {
+              "@wd:type": "WID",
+              "#text": "dde36542331f1000b66f45813fbd0000"
+            },
+            {
+              "@wd:type": "Organization_Reference_ID",
+              "#text": "RRO"
+            },
+            {
+              "@wd:type": "Company_Reference_ID",
+              "#text": "RRO"
+            }
+          ]
+        },
+        "wd:Item_Reference": {
+          "wd:ID": [
+            {
+              "@wd:type": "WID",
+              "#text": "47ed074eabdc0109849a3022361536fd"
+            },
+            {
+              "@wd:type": "Sales_Item_ID",
+              "#text": "Financial Reporting"
+            }
+          ]
+        },
+        "wd:Accounting_Category_Reference": {
+          "wd:ID": [
+            {
+              "@wd:type": "WID",
+              "#text": "47ed074eabdc0184d39f26523415a7f4"
+            },
+            {
+              "@wd:type": "Revenue_Category_ID",
+              "#text": "Valuation Services - Fixed Fee"
+            }
+          ]
+        },
+        "wd:Quantity": "1",
+        "wd:Unit_of_Measure_Reference": {
+          "wd:ID": [
+            {
+              "@wd:type": "WID",
+              "#text": "9c5ef1aaea1c10506a65b069f3d779a8"
+            },
+            {
+              "@wd:type": "UN_CEFACT_Common_Code_ID",
+              "#text": "EA"
+            }
+          ]
+        },
+        "wd:Unit_Cost": "8000",
+        "wd:Extended_Amount": "8000",
+        "wd:Customer_Invoice_Line_for_Tax_Calculation_Data": null
+      }
+    }
+  },
+  {
+    "wd:Taxable_Document_for_Tax_Calculation_Reference": {
+      "wd:ID": [
+        {
+          "@wd:type": "WID",
+          "#text": "42259d037f4e9001b9e2fe2c8fc60000"
+        },
+        {
+          "@wd:type": "Customer_Invoice_Reference_ID",
+          "#text": "CUSTOMER_INVOICE-6-723743"
+        }
+      ]
+    },
+    "wd:Taxable_Document_for_Tax_Calculation_Data": {
+      "wd:Taxable_Document_Header_for_Tax_Calculation_Data": {
+        "wd:Company_Reference": {
+          "wd:ID": [
+            {
+              "@wd:type": "WID",
+              "#text": "dde36542331f1000b66f45813fbd0000"
+            },
+            {
+              "@wd:type": "Organization_Reference_ID",
+              "#text": "RRO"
+            },
+            {
+              "@wd:type": "Company_Reference_ID",
+              "#text": "RRO"
+            }
+          ]
+        },
+        "wd:Document_Number": "822941",
+        "wd:Currency_Reference": {
+          "wd:ID": [
+            {
+              "@wd:type": "WID",
+              "#text": "9e996ffdd3e14da0ba7275d5400bafd4"
+            },
+            {
+              "@wd:type": "Currency_ID",
+              "#text": "USD"
+            },
+            {
+              "@wd:type": "Currency_Numeric_Code",
+              "#text": "840"
+            }
+          ]
+        },
+        "wd:Document_Date": "2025-09-25",
+        "wd:Customer_Invoice_Header_for_Tax_Calculation_Data": {
+          "wd:Bill_To_Customer_Reference": {
+            "wd:ID": [
+              {
+                "@wd:type": "WID",
+                "#text": "9844436666b7100501a2f31fff84a6c6"
+              },
+              {
+                "@wd:type": "Customer_Reference_ID",
+                "#text": "27324"
+              },
+              {
+                "@wd:type": "Customer_ID",
+                "#text": "27324"
+              }
+            ]
+          },
+          "wd:Customer_Bill-To_Address_Data": {
+            "wd:Customer_Bill-To_Address_Data": {
+              "@wd:Address_Format_Type": "Basic",
+              "@wd:Formatted_Address": "111 W Java Drive&#xa;Sunnyvale, CA 94089&#xa;United States of America",
+              "@wd:Defaulted_Business_Site_Address": "1",
+              "wd:Country_Reference": {
+                "wd:ID": [
+                  {
+                    "@wd:type": "WID",
+                    "#text": "bc33aa3152ec42d4995f4791a106ed09"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-1_Alpha-2_Code",
+                    "#text": "US"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-1_Alpha-3_Code",
+                    "#text": "USA"
+                  },
+                  {
+                    "@wd:type": "OPM_Country_Code",
+                    "#text": "US"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-1_Numeric-3_Code",
+                    "#text": "840"
+                  }
+                ]
+              },
+              "wd:Last_Modified": "2018-04-26T05:40:24.158-07:00",
+              "wd:Address_Line_Data": {
+                "@wd:Type": "ADDRESS_LINE_1",
+                "@wd:Descriptor": "Address Line 1",
+                "#text": "111 W Java Drive"
+              },
+              "wd:Municipality": "Sunnyvale",
+              "wd:Country_Region_Reference": {
+                "wd:ID": [
+                  {
+                    "@wd:type": "WID",
+                    "#text": "ec3d210e4240442e99a28fa70419aec5"
+                  },
+                  {
+                    "@wd:type": "Country_Region_ID",
+                    "#text": "USA-CA"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-2_Code",
+                    "#text": "CA"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-2_Country-Region_Code",
+                    "#text": "US-CA"
+                  },
+                  {
+                    "@wd:type": "OPM_Country_Subdivision_Code",
+                    "#text": "US-CA"
+                  }
+                ]
+              },
+              "wd:Country_Region_Descriptor": "California",
+              "wd:Postal_Code": "94089",
+              "wd:Address_Reference": {
+                "wd:ID": [
+                  {
+                    "@wd:type": "WID",
+                    "#text": "4e2afab661ef01bd31e88dd5ed1457f4"
+                  },
+                  {
+                    "@wd:type": "Address_ID",
+                    "#text": "ADDRESS_REFERENCE-3-13067610"
+                  }
+                ]
+              },
+              "wd:Address_ID": "ADDRESS_REFERENCE-3-13067610"
+            }
+          },
+          "wd:Sold_To_Customer_Reference": {
+            "wd:ID": [
+              {
+                "@wd:type": "WID",
+                "#text": "9844436666b7100501a2f31fff84a6c6"
+              },
+              {
+                "@wd:type": "Customer_Reference_ID",
+                "#text": "27324"
+              },
+              {
+                "@wd:type": "Customer_ID",
+                "#text": "27324"
+              }
+            ]
+          },
+          "wd:Customer_Sold-To_Address_Data": {
+            "wd:Customer_Sold-To_Address_Data": {
+              "@wd:Address_Format_Type": "Basic",
+              "@wd:Formatted_Address": "111 W Java Drive&#xa;Sunnyvale, CA 94089&#xa;United States of America",
+              "@wd:Defaulted_Business_Site_Address": "1",
+              "wd:Country_Reference": {
+                "wd:ID": [
+                  {
+                    "@wd:type": "WID",
+                    "#text": "bc33aa3152ec42d4995f4791a106ed09"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-1_Alpha-2_Code",
+                    "#text": "US"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-1_Alpha-3_Code",
+                    "#text": "USA"
+                  },
+                  {
+                    "@wd:type": "OPM_Country_Code",
+                    "#text": "US"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-1_Numeric-3_Code",
+                    "#text": "840"
+                  }
+                ]
+              },
+              "wd:Last_Modified": "2018-04-26T05:40:24.158-07:00",
+              "wd:Address_Line_Data": {
+                "@wd:Type": "ADDRESS_LINE_1",
+                "@wd:Descriptor": "Address Line 1",
+                "#text": "111 W Java Drive"
+              },
+              "wd:Municipality": "Sunnyvale",
+              "wd:Country_Region_Reference": {
+                "wd:ID": [
+                  {
+                    "@wd:type": "WID",
+                    "#text": "ec3d210e4240442e99a28fa70419aec5"
+                  },
+                  {
+                    "@wd:type": "Country_Region_ID",
+                    "#text": "USA-CA"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-2_Code",
+                    "#text": "CA"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-2_Country-Region_Code",
+                    "#text": "US-CA"
+                  },
+                  {
+                    "@wd:type": "OPM_Country_Subdivision_Code",
+                    "#text": "US-CA"
+                  }
+                ]
+              },
+              "wd:Country_Region_Descriptor": "California",
+              "wd:Postal_Code": "94089",
+              "wd:Address_Reference": {
+                "wd:ID": [
+                  {
+                    "@wd:type": "WID",
+                    "#text": "4e2afab661ef01bd31e88dd5ed1457f4"
+                  },
+                  {
+                    "@wd:type": "Address_ID",
+                    "#text": "ADDRESS_REFERENCE-3-13067610"
+                  }
+                ]
+              },
+              "wd:Address_ID": "ADDRESS_REFERENCE-3-13067610"
+            }
+          },
+          "wd:Worktags_Reference": [
+            {
+              "wd:ID": [
+                {
+                  "@wd:type": "WID",
+                  "#text": "ba5128dd27c51000c5c7c12cf0690000"
+                },
+                {
+                  "@wd:type": "Organization_Reference_ID",
+                  "#text": "RPA_211"
+                },
+                {
+                  "@wd:type": "Custom_Organization_Reference_ID",
+                  "#text": "RPA_211"
+                }
+              ]
+            },
+            {
+              "wd:ID": [
+                {
+                  "@wd:type": "WID",
+                  "#text": "735a8e93eece1075faedf2bb78807aee"
+                },
+                {
+                  "@wd:type": "Organization_Reference_ID",
+                  "#text": "CC_1040"
+                },
+                {
+                  "@wd:type": "Cost_Center_Reference_ID",
+                  "#text": "CC_1040"
+                }
+              ]
+            },
+            {
+              "wd:ID": [
+                {
+                  "@wd:type": "WID",
+                  "#text": "9844436666b710053c6df73e547bddce"
+                },
+                {
+                  "@wd:type": "Custom_Worktag_2_ID",
+                  "#text": "MC"
+                }
+              ]
+            },
+            {
+              "wd:ID": [
+                {
+                  "@wd:type": "WID",
+                  "#text": "9844436666b710053c6ddc724e65dd98"
+                },
+                {
+                  "@wd:type": "Custom_Worktag_3_ID",
+                  "#text": "Blended Hourly"
+                }
+              ]
+            },
+            {
+              "wd:ID": [
+                {
+                  "@wd:type": "WID",
+                  "#text": "8e540ad852971059242fdb526822c7a9"
+                },
+                {
+                  "@wd:type": "Custom_Worktag_08_ID",
+                  "#text": "COS"
+                }
+              ]
+            },
+            {
+              "wd:ID": [
+                {
+                  "@wd:type": "WID",
+                  "#text": "9844436666b710053c6da9a17f52dd36"
+                },
+                {
+                  "@wd:type": "Custom_Worktag_09_ID",
+                  "#text": "REV_GEN"
+                }
+              ]
+            },
+            {
+              "wd:ID": [
+                {
+                  "@wd:type": "WID",
+                  "#text": "9844436666b710053c6dcdf6d643dd88"
+                },
+                {
+                  "@wd:type": "Custom_Worktag_4_ID",
+                  "#text": "IMP"
+                }
+              ]
+            }
+          ],
+          "wd:Customer_Category_of_Bill_to_Customer_Reference": {
+            "wd:ID": [
+              {
+                "@wd:type": "WID",
+                "#text": "9844436666b71003559f4fa1661301cb"
+              },
+              {
+                "@wd:type": "Customer_Category_ID",
+                "#text": "Business Services"
+              }
+            ]
+          }
+        }
+      },
+      "wd:Taxable_Document_Line_for_Tax_Calculation_Data": {
+        "wd:Line_Reference_ID": "CUSTOMER_INVOICE_LINE-6-2038698",
+        "wd:Company_Reference": {
+          "wd:ID": [
+            {
+              "@wd:type": "WID",
+              "#text": "dde36542331f1000b66f45813fbd0000"
+            },
+            {
+              "@wd:type": "Organization_Reference_ID",
+              "#text": "RRO"
+            },
+            {
+              "@wd:type": "Company_Reference_ID",
+              "#text": "RRO"
+            }
+          ]
+        },
+        "wd:Item_Reference": {
+          "wd:ID": [
+            {
+              "@wd:type": "WID",
+              "#text": "b955afeea4a5010f96af5f2a640e73cb"
+            },
+            {
+              "@wd:type": "Sales_Item_ID",
+              "#text": "Valuation Services"
+            }
+          ]
+        },
+        "wd:Item_Description": "hdf",
+        "wd:Accounting_Category_Reference": {
+          "wd:ID": [
+            {
+              "@wd:type": "WID",
+              "#text": "9844436666b710035bf8bfcd082d070a"
+            },
+            {
+              "@wd:type": "Revenue_Category_ID",
+              "#text": "HOURLY_FEES"
+            }
+          ]
+        },
+        "wd:Quantity": "1",
+        "wd:Unit_of_Measure_Reference": {
+          "wd:ID": [
+            {
+              "@wd:type": "WID",
+              "#text": "9c5ef1aaea1c10506a65b069f3d779a8"
+            },
+            {
+              "@wd:type": "UN_CEFACT_Common_Code_ID",
+              "#text": "EA"
+            }
+          ]
+        },
+        "wd:Unit_Cost": "50",
+        "wd:Extended_Amount": "50",
+        "wd:Customer_Invoice_Line_for_Tax_Calculation_Data": null
+      }
+    }
+  },
+  {
+    "wd:Taxable_Document_for_Tax_Calculation_Reference": {
+      "wd:ID": [
+        {
+          "@wd:type": "WID",
+          "#text": "35e470ab13159000ad7bb37d73000000"
+        },
+        {
+          "@wd:type": "Customer_Invoice_Reference_ID",
+          "#text": "CUSTOMER_INVOICE-6-723772"
+        }
+      ]
+    },
+    "wd:Taxable_Document_for_Tax_Calculation_Data": {
+      "wd:Taxable_Document_Header_for_Tax_Calculation_Data": {
+        "wd:Company_Reference": {
+          "wd:ID": [
+            {
+              "@wd:type": "WID",
+              "#text": "dde36542331f1000b66f45813fbd0000"
+            },
+            {
+              "@wd:type": "Organization_Reference_ID",
+              "#text": "RRO"
+            },
+            {
+              "@wd:type": "Company_Reference_ID",
+              "#text": "RRO"
+            }
+          ]
+        },
+        "wd:Document_Number": "822943",
+        "wd:Currency_Reference": {
+          "wd:ID": [
+            {
+              "@wd:type": "WID",
+              "#text": "9e996ffdd3e14da0ba7275d5400bafd4"
+            },
+            {
+              "@wd:type": "Currency_ID",
+              "#text": "USD"
+            },
+            {
+              "@wd:type": "Currency_Numeric_Code",
+              "#text": "840"
+            }
+          ]
+        },
+        "wd:Document_Date": "2025-10-06",
+        "wd:Third_Party_Tax_Document_Status_Reference": {
+          "wd:ID": [
+            {
+              "@wd:type": "WID",
+              "#text": "dc76caa6446c11de98360015c5e6daf6"
+            },
+            {
+              "@wd:type": "Document_Status_ID",
+              "#text": "COMPLETE"
+            }
+          ]
+        },
+        "wd:Customer_Invoice_Header_for_Tax_Calculation_Data": {
+          "wd:Bill_To_Customer_Reference": {
+            "wd:ID": [
+              {
+                "@wd:type": "WID",
+                "#text": "9844436666b7100501a2f31fff84a6c6"
+              },
+              {
+                "@wd:type": "Customer_Reference_ID",
+                "#text": "27324"
+              },
+              {
+                "@wd:type": "Customer_ID",
+                "#text": "27324"
+              }
+            ]
+          },
+          "wd:Customer_Bill-To_Address_Data": {
+            "wd:Customer_Bill-To_Address_Data": {
+              "@wd:Address_Format_Type": "Basic",
+              "@wd:Formatted_Address": "111 W Java Drive&#xa;Sunnyvale, CA 94089&#xa;United States of America",
+              "@wd:Defaulted_Business_Site_Address": "1",
+              "wd:Country_Reference": {
+                "wd:ID": [
+                  {
+                    "@wd:type": "WID",
+                    "#text": "bc33aa3152ec42d4995f4791a106ed09"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-1_Alpha-2_Code",
+                    "#text": "US"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-1_Alpha-3_Code",
+                    "#text": "USA"
+                  },
+                  {
+                    "@wd:type": "OPM_Country_Code",
+                    "#text": "US"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-1_Numeric-3_Code",
+                    "#text": "840"
+                  }
+                ]
+              },
+              "wd:Last_Modified": "2018-04-26T05:40:24.158-07:00",
+              "wd:Address_Line_Data": {
+                "@wd:Type": "ADDRESS_LINE_1",
+                "@wd:Descriptor": "Address Line 1",
+                "#text": "111 W Java Drive"
+              },
+              "wd:Municipality": "Sunnyvale",
+              "wd:Country_Region_Reference": {
+                "wd:ID": [
+                  {
+                    "@wd:type": "WID",
+                    "#text": "ec3d210e4240442e99a28fa70419aec5"
+                  },
+                  {
+                    "@wd:type": "Country_Region_ID",
+                    "#text": "USA-CA"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-2_Code",
+                    "#text": "CA"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-2_Country-Region_Code",
+                    "#text": "US-CA"
+                  },
+                  {
+                    "@wd:type": "OPM_Country_Subdivision_Code",
+                    "#text": "US-CA"
+                  }
+                ]
+              },
+              "wd:Country_Region_Descriptor": "California",
+              "wd:Postal_Code": "94089",
+              "wd:Address_Reference": {
+                "wd:ID": [
+                  {
+                    "@wd:type": "WID",
+                    "#text": "4e2afab661ef01bd31e88dd5ed1457f4"
+                  },
+                  {
+                    "@wd:type": "Address_ID",
+                    "#text": "ADDRESS_REFERENCE-3-13067610"
+                  }
+                ]
+              },
+              "wd:Address_ID": "ADDRESS_REFERENCE-3-13067610"
+            }
+          },
+          "wd:Sold_To_Customer_Reference": {
+            "wd:ID": [
+              {
+                "@wd:type": "WID",
+                "#text": "9844436666b7100501a2f31fff84a6c6"
+              },
+              {
+                "@wd:type": "Customer_Reference_ID",
+                "#text": "27324"
+              },
+              {
+                "@wd:type": "Customer_ID",
+                "#text": "27324"
+              }
+            ]
+          },
+          "wd:Customer_Sold-To_Address_Data": {
+            "wd:Customer_Sold-To_Address_Data": {
+              "@wd:Address_Format_Type": "Basic",
+              "@wd:Formatted_Address": "111 W Java Drive&#xa;Sunnyvale, CA 94089&#xa;United States of America",
+              "@wd:Defaulted_Business_Site_Address": "1",
+              "wd:Country_Reference": {
+                "wd:ID": [
+                  {
+                    "@wd:type": "WID",
+                    "#text": "bc33aa3152ec42d4995f4791a106ed09"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-1_Alpha-2_Code",
+                    "#text": "US"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-1_Alpha-3_Code",
+                    "#text": "USA"
+                  },
+                  {
+                    "@wd:type": "OPM_Country_Code",
+                    "#text": "US"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-1_Numeric-3_Code",
+                    "#text": "840"
+                  }
+                ]
+              },
+              "wd:Last_Modified": "2018-04-26T05:40:24.158-07:00",
+              "wd:Address_Line_Data": {
+                "@wd:Type": "ADDRESS_LINE_1",
+                "@wd:Descriptor": "Address Line 1",
+                "#text": "111 W Java Drive"
+              },
+              "wd:Municipality": "Sunnyvale",
+              "wd:Country_Region_Reference": {
+                "wd:ID": [
+                  {
+                    "@wd:type": "WID",
+                    "#text": "ec3d210e4240442e99a28fa70419aec5"
+                  },
+                  {
+                    "@wd:type": "Country_Region_ID",
+                    "#text": "USA-CA"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-2_Code",
+                    "#text": "CA"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-2_Country-Region_Code",
+                    "#text": "US-CA"
+                  },
+                  {
+                    "@wd:type": "OPM_Country_Subdivision_Code",
+                    "#text": "US-CA"
+                  }
+                ]
+              },
+              "wd:Country_Region_Descriptor": "California",
+              "wd:Postal_Code": "94089",
+              "wd:Address_Reference": {
+                "wd:ID": [
+                  {
+                    "@wd:type": "WID",
+                    "#text": "4e2afab661ef01bd31e88dd5ed1457f4"
+                  },
+                  {
+                    "@wd:type": "Address_ID",
+                    "#text": "ADDRESS_REFERENCE-3-13067610"
+                  }
+                ]
+              },
+              "wd:Address_ID": "ADDRESS_REFERENCE-3-13067610"
+            }
+          },
+          "wd:Worktags_Reference": [
+            {
+              "wd:ID": [
+                {
+                  "@wd:type": "WID",
+                  "#text": "735a8e93eece1075faedf2bb78807aee"
+                },
+                {
+                  "@wd:type": "Organization_Reference_ID",
+                  "#text": "CC_1040"
+                },
+                {
+                  "@wd:type": "Cost_Center_Reference_ID",
+                  "#text": "CC_1040"
+                }
+              ]
+            },
+            {
+              "wd:ID": [
+                {
+                  "@wd:type": "WID",
+                  "#text": "9844436666b710053c6df73e547bddce"
+                },
+                {
+                  "@wd:type": "Custom_Worktag_2_ID",
+                  "#text": "MC"
+                }
+              ]
+            },
+            {
+              "wd:ID": [
+                {
+                  "@wd:type": "WID",
+                  "#text": "d02b5378d41d011e9e143127de65d932"
+                },
+                {
+                  "@wd:type": "Organization_Reference_ID",
+                  "#text": "RPA_036"
+                },
+                {
+                  "@wd:type": "Custom_Organization_Reference_ID",
+                  "#text": "RPA_036"
+                }
+              ]
+            },
+            {
+              "wd:ID": [
+                {
+                  "@wd:type": "WID",
+                  "#text": "9844436666b710053c6ddc724e65dd98"
+                },
+                {
+                  "@wd:type": "Custom_Worktag_3_ID",
+                  "#text": "Blended Hourly"
+                }
+              ]
+            },
+            {
+              "wd:ID": [
+                {
+                  "@wd:type": "WID",
+                  "#text": "8e540ad852971059242fdb526822c7a9"
+                },
+                {
+                  "@wd:type": "Custom_Worktag_08_ID",
+                  "#text": "COS"
+                }
+              ]
+            },
+            {
+              "wd:ID": [
+                {
+                  "@wd:type": "WID",
+                  "#text": "9844436666b710053c6da9a17f52dd36"
+                },
+                {
+                  "@wd:type": "Custom_Worktag_09_ID",
+                  "#text": "REV_GEN"
+                }
+              ]
+            },
+            {
+              "wd:ID": [
+                {
+                  "@wd:type": "WID",
+                  "#text": "9844436666b710053c6dcdf6d643dd88"
+                },
+                {
+                  "@wd:type": "Custom_Worktag_4_ID",
+                  "#text": "IMP"
+                }
+              ]
+            }
+          ],
+          "wd:Customer_Category_of_Bill_to_Customer_Reference": {
+            "wd:ID": [
+              {
+                "@wd:type": "WID",
+                "#text": "9844436666b71003559f4fa1661301cb"
+              },
+              {
+                "@wd:type": "Customer_Category_ID",
+                "#text": "Business Services"
+              }
+            ]
+          }
+        }
+      },
+      "wd:Taxable_Document_Line_for_Tax_Calculation_Data": {
+        "wd:Line_Reference_ID": "CUSTOMER_INVOICE_LINE-6-2038739",
+        "wd:Company_Reference": {
+          "wd:ID": [
+            {
+              "@wd:type": "WID",
+              "#text": "dde36542331f1000b66f45813fbd0000"
+            },
+            {
+              "@wd:type": "Organization_Reference_ID",
+              "#text": "RRO"
+            },
+            {
+              "@wd:type": "Company_Reference_ID",
+              "#text": "RRO"
+            }
+          ]
+        },
+        "wd:Item_Reference": {
+          "wd:ID": [
+            {
+              "@wd:type": "WID",
+              "#text": "47ed074eabdc0109849a3022361536fd"
+            },
+            {
+              "@wd:type": "Sales_Item_ID",
+              "#text": "Financial Reporting"
+            }
+          ]
+        },
+        "wd:Accounting_Category_Reference": {
+          "wd:ID": [
+            {
+              "@wd:type": "WID",
+              "#text": "47ed074eabdc0184d39f26523415a7f4"
+            },
+            {
+              "@wd:type": "Revenue_Category_ID",
+              "#text": "Valuation Services - Fixed Fee"
+            }
+          ]
+        },
+        "wd:Quantity": "1",
+        "wd:Unit_of_Measure_Reference": {
+          "wd:ID": [
+            {
+              "@wd:type": "WID",
+              "#text": "9c5ef1aaea1c10506a65b069f3d779a8"
+            },
+            {
+              "@wd:type": "UN_CEFACT_Common_Code_ID",
+              "#text": "EA"
+            }
+          ]
+        },
+        "wd:Unit_Cost": "8000",
+        "wd:Extended_Amount": "8000",
+        "wd:Customer_Invoice_Line_for_Tax_Calculation_Data": null
+      }
+    }
+  },
+  {
+    "wd:Taxable_Document_for_Tax_Calculation_Reference": {
+      "wd:ID": [
+        {
+          "@wd:type": "WID",
+          "#text": "35e470ab1315900151b4aef6f4230000"
+        },
+        {
+          "@wd:type": "Customer_Invoice_Reference_ID",
+          "#text": "CUSTOMER_INVOICE-6-723778"
+        }
+      ]
+    },
+    "wd:Taxable_Document_for_Tax_Calculation_Data": {
+      "wd:Taxable_Document_Header_for_Tax_Calculation_Data": {
+        "wd:Company_Reference": {
+          "wd:ID": [
+            {
+              "@wd:type": "WID",
+              "#text": "dde36542331f1000b66f45813fbd0000"
+            },
+            {
+              "@wd:type": "Organization_Reference_ID",
+              "#text": "RRO"
+            },
+            {
+              "@wd:type": "Company_Reference_ID",
+              "#text": "RRO"
+            }
+          ]
+        },
+        "wd:Document_Number": "822945",
+        "wd:Currency_Reference": {
+          "wd:ID": [
+            {
+              "@wd:type": "WID",
+              "#text": "9e996ffdd3e14da0ba7275d5400bafd4"
+            },
+            {
+              "@wd:type": "Currency_ID",
+              "#text": "USD"
+            },
+            {
+              "@wd:type": "Currency_Numeric_Code",
+              "#text": "840"
+            }
+          ]
+        },
+        "wd:Document_Date": "2025-10-08",
+        "wd:Third_Party_Tax_Document_Status_Reference": {
+          "wd:ID": [
+            {
+              "@wd:type": "WID",
+              "#text": "e264bc68581342baa70ab61bf71032fe"
+            },
+            {
+              "@wd:type": "Document_Status_ID",
+              "#text": "INCOMPLETE"
+            }
+          ]
+        },
+        "wd:Customer_Invoice_Header_for_Tax_Calculation_Data": {
+          "wd:Bill_To_Customer_Reference": {
+            "wd:ID": [
+              {
+                "@wd:type": "WID",
+                "#text": "9844436666b7100501a2f31fff84a6c6"
+              },
+              {
+                "@wd:type": "Customer_Reference_ID",
+                "#text": "27324"
+              },
+              {
+                "@wd:type": "Customer_ID",
+                "#text": "27324"
+              }
+            ]
+          },
+          "wd:Customer_Bill-To_Address_Data": {
+            "wd:Customer_Bill-To_Address_Data": {
+              "@wd:Address_Format_Type": "Basic",
+              "@wd:Formatted_Address": "111 W Java Drive&#xa;Sunnyvale, CA 94089&#xa;United States of America",
+              "@wd:Defaulted_Business_Site_Address": "1",
+              "wd:Country_Reference": {
+                "wd:ID": [
+                  {
+                    "@wd:type": "WID",
+                    "#text": "bc33aa3152ec42d4995f4791a106ed09"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-1_Alpha-2_Code",
+                    "#text": "US"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-1_Alpha-3_Code",
+                    "#text": "USA"
+                  },
+                  {
+                    "@wd:type": "OPM_Country_Code",
+                    "#text": "US"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-1_Numeric-3_Code",
+                    "#text": "840"
+                  }
+                ]
+              },
+              "wd:Last_Modified": "2018-04-26T05:40:24.158-07:00",
+              "wd:Address_Line_Data": {
+                "@wd:Type": "ADDRESS_LINE_1",
+                "@wd:Descriptor": "Address Line 1",
+                "#text": "111 W Java Drive"
+              },
+              "wd:Municipality": "Sunnyvale",
+              "wd:Country_Region_Reference": {
+                "wd:ID": [
+                  {
+                    "@wd:type": "WID",
+                    "#text": "ec3d210e4240442e99a28fa70419aec5"
+                  },
+                  {
+                    "@wd:type": "Country_Region_ID",
+                    "#text": "USA-CA"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-2_Code",
+                    "#text": "CA"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-2_Country-Region_Code",
+                    "#text": "US-CA"
+                  },
+                  {
+                    "@wd:type": "OPM_Country_Subdivision_Code",
+                    "#text": "US-CA"
+                  }
+                ]
+              },
+              "wd:Country_Region_Descriptor": "California",
+              "wd:Postal_Code": "94089",
+              "wd:Address_Reference": {
+                "wd:ID": [
+                  {
+                    "@wd:type": "WID",
+                    "#text": "4e2afab661ef01bd31e88dd5ed1457f4"
+                  },
+                  {
+                    "@wd:type": "Address_ID",
+                    "#text": "ADDRESS_REFERENCE-3-13067610"
+                  }
+                ]
+              },
+              "wd:Address_ID": "ADDRESS_REFERENCE-3-13067610"
+            }
+          },
+          "wd:Sold_To_Customer_Reference": {
+            "wd:ID": [
+              {
+                "@wd:type": "WID",
+                "#text": "9844436666b7100501a2f31fff84a6c6"
+              },
+              {
+                "@wd:type": "Customer_Reference_ID",
+                "#text": "27324"
+              },
+              {
+                "@wd:type": "Customer_ID",
+                "#text": "27324"
+              }
+            ]
+          },
+          "wd:Customer_Sold-To_Address_Data": {
+            "wd:Customer_Sold-To_Address_Data": {
+              "@wd:Address_Format_Type": "Basic",
+              "@wd:Formatted_Address": "111 W Java Drive&#xa;Sunnyvale, CA 94089&#xa;United States of America",
+              "@wd:Defaulted_Business_Site_Address": "1",
+              "wd:Country_Reference": {
+                "wd:ID": [
+                  {
+                    "@wd:type": "WID",
+                    "#text": "bc33aa3152ec42d4995f4791a106ed09"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-1_Alpha-2_Code",
+                    "#text": "US"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-1_Alpha-3_Code",
+                    "#text": "USA"
+                  },
+                  {
+                    "@wd:type": "OPM_Country_Code",
+                    "#text": "US"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-1_Numeric-3_Code",
+                    "#text": "840"
+                  }
+                ]
+              },
+              "wd:Last_Modified": "2018-04-26T05:40:24.158-07:00",
+              "wd:Address_Line_Data": {
+                "@wd:Type": "ADDRESS_LINE_1",
+                "@wd:Descriptor": "Address Line 1",
+                "#text": "111 W Java Drive"
+              },
+              "wd:Municipality": "Sunnyvale",
+              "wd:Country_Region_Reference": {
+                "wd:ID": [
+                  {
+                    "@wd:type": "WID",
+                    "#text": "ec3d210e4240442e99a28fa70419aec5"
+                  },
+                  {
+                    "@wd:type": "Country_Region_ID",
+                    "#text": "USA-CA"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-2_Code",
+                    "#text": "CA"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-2_Country-Region_Code",
+                    "#text": "US-CA"
+                  },
+                  {
+                    "@wd:type": "OPM_Country_Subdivision_Code",
+                    "#text": "US-CA"
+                  }
+                ]
+              },
+              "wd:Country_Region_Descriptor": "California",
+              "wd:Postal_Code": "94089",
+              "wd:Address_Reference": {
+                "wd:ID": [
+                  {
+                    "@wd:type": "WID",
+                    "#text": "4e2afab661ef01bd31e88dd5ed1457f4"
+                  },
+                  {
+                    "@wd:type": "Address_ID",
+                    "#text": "ADDRESS_REFERENCE-3-13067610"
+                  }
+                ]
+              },
+              "wd:Address_ID": "ADDRESS_REFERENCE-3-13067610"
+            }
+          },
+          "wd:Worktags_Reference": [
+            {
+              "wd:ID": [
+                {
+                  "@wd:type": "WID",
+                  "#text": "735a8e93eece1075faedf2bb78807aee"
+                },
+                {
+                  "@wd:type": "Organization_Reference_ID",
+                  "#text": "CC_1040"
+                },
+                {
+                  "@wd:type": "Cost_Center_Reference_ID",
+                  "#text": "CC_1040"
+                }
+              ]
+            },
+            {
+              "wd:ID": [
+                {
+                  "@wd:type": "WID",
+                  "#text": "9844436666b710053c6df73e547bddce"
+                },
+                {
+                  "@wd:type": "Custom_Worktag_2_ID",
+                  "#text": "MC"
+                }
+              ]
+            },
+            {
+              "wd:ID": [
+                {
+                  "@wd:type": "WID",
+                  "#text": "d02b5378d41d011e9e143127de65d932"
+                },
+                {
+                  "@wd:type": "Organization_Reference_ID",
+                  "#text": "RPA_036"
+                },
+                {
+                  "@wd:type": "Custom_Organization_Reference_ID",
+                  "#text": "RPA_036"
+                }
+              ]
+            },
+            {
+              "wd:ID": [
+                {
+                  "@wd:type": "WID",
+                  "#text": "9844436666b710053c6ddc724e65dd98"
+                },
+                {
+                  "@wd:type": "Custom_Worktag_3_ID",
+                  "#text": "Blended Hourly"
+                }
+              ]
+            },
+            {
+              "wd:ID": [
+                {
+                  "@wd:type": "WID",
+                  "#text": "8e540ad852971059242fdb526822c7a9"
+                },
+                {
+                  "@wd:type": "Custom_Worktag_08_ID",
+                  "#text": "COS"
+                }
+              ]
+            },
+            {
+              "wd:ID": [
+                {
+                  "@wd:type": "WID",
+                  "#text": "9844436666b710053c6da9a17f52dd36"
+                },
+                {
+                  "@wd:type": "Custom_Worktag_09_ID",
+                  "#text": "REV_GEN"
+                }
+              ]
+            },
+            {
+              "wd:ID": [
+                {
+                  "@wd:type": "WID",
+                  "#text": "9844436666b710053c6dcdf6d643dd88"
+                },
+                {
+                  "@wd:type": "Custom_Worktag_4_ID",
+                  "#text": "IMP"
+                }
+              ]
+            }
+          ],
+          "wd:Customer_Category_of_Bill_to_Customer_Reference": {
+            "wd:ID": [
+              {
+                "@wd:type": "WID",
+                "#text": "9844436666b71003559f4fa1661301cb"
+              },
+              {
+                "@wd:type": "Customer_Category_ID",
+                "#text": "Business Services"
+              }
+            ]
+          }
+        }
+      },
+      "wd:Taxable_Document_Line_for_Tax_Calculation_Data": {
+        "wd:Line_Reference_ID": "CUSTOMER_INVOICE_LINE-6-2038745",
+        "wd:Company_Reference": {
+          "wd:ID": [
+            {
+              "@wd:type": "WID",
+              "#text": "dde36542331f1000b66f45813fbd0000"
+            },
+            {
+              "@wd:type": "Organization_Reference_ID",
+              "#text": "RRO"
+            },
+            {
+              "@wd:type": "Company_Reference_ID",
+              "#text": "RRO"
+            }
+          ]
+        },
+        "wd:Item_Reference": {
+          "wd:ID": [
+            {
+              "@wd:type": "WID",
+              "#text": "47ed074eabdc0109849a3022361536fd"
+            },
+            {
+              "@wd:type": "Sales_Item_ID",
+              "#text": "Financial Reporting"
+            }
+          ]
+        },
+        "wd:Accounting_Category_Reference": {
+          "wd:ID": [
+            {
+              "@wd:type": "WID",
+              "#text": "47ed074eabdc0184d39f26523415a7f4"
+            },
+            {
+              "@wd:type": "Revenue_Category_ID",
+              "#text": "Valuation Services - Fixed Fee"
+            }
+          ]
+        },
+        "wd:Quantity": "12",
+        "wd:Unit_of_Measure_Reference": {
+          "wd:ID": [
+            {
+              "@wd:type": "WID",
+              "#text": "9c5ef1aaea1c10506a65b069f3d779a8"
+            },
+            {
+              "@wd:type": "UN_CEFACT_Common_Code_ID",
+              "#text": "EA"
+            }
+          ]
+        },
+        "wd:Unit_Cost": "8000",
+        "wd:Extended_Amount": "96000",
+        "wd:Customer_Invoice_Line_for_Tax_Calculation_Data": null
+      }
+    }
+  },
+  {
+    "wd:Taxable_Document_for_Tax_Calculation_Reference": {
+      "wd:ID": [
+        {
+          "@wd:type": "WID",
+          "#text": "3892a80e96519001485e8befceb00000"
+        },
+        {
+          "@wd:type": "Customer_Invoice_Reference_ID",
+          "#text": "CUSTOMER_INVOICE-6-723783"
+        }
+      ]
+    },
+    "wd:Taxable_Document_for_Tax_Calculation_Data": {
+      "wd:Taxable_Document_Header_for_Tax_Calculation_Data": {
+        "wd:Company_Reference": {
+          "wd:ID": [
+            {
+              "@wd:type": "WID",
+              "#text": "dde36542331f1000b66f45813fbd0000"
+            },
+            {
+              "@wd:type": "Organization_Reference_ID",
+              "#text": "RRO"
+            },
+            {
+              "@wd:type": "Company_Reference_ID",
+              "#text": "RRO"
+            }
+          ]
+        },
+        "wd:Document_Number": "822944",
+        "wd:Currency_Reference": {
+          "wd:ID": [
+            {
+              "@wd:type": "WID",
+              "#text": "9e996ffdd3e14da0ba7275d5400bafd4"
+            },
+            {
+              "@wd:type": "Currency_ID",
+              "#text": "USD"
+            },
+            {
+              "@wd:type": "Currency_Numeric_Code",
+              "#text": "840"
+            }
+          ]
+        },
+        "wd:Document_Date": "2025-10-08",
+        "wd:Third_Party_Tax_Document_Status_Reference": {
+          "wd:ID": [
+            {
+              "@wd:type": "WID",
+              "#text": "e264bc68581342baa70ab61bf71032fe"
+            },
+            {
+              "@wd:type": "Document_Status_ID",
+              "#text": "INCOMPLETE"
+            }
+          ]
+        },
+        "wd:Customer_Invoice_Header_for_Tax_Calculation_Data": {
+          "wd:Bill_To_Customer_Reference": {
+            "wd:ID": [
+              {
+                "@wd:type": "WID",
+                "#text": "9844436666b7100501a2f31fff84a6c6"
+              },
+              {
+                "@wd:type": "Customer_Reference_ID",
+                "#text": "27324"
+              },
+              {
+                "@wd:type": "Customer_ID",
+                "#text": "27324"
+              }
+            ]
+          },
+          "wd:Customer_Bill-To_Address_Data": {
+            "wd:Customer_Bill-To_Address_Data": {
+              "@wd:Address_Format_Type": "Basic",
+              "@wd:Formatted_Address": "111 W Java Drive&#xa;Sunnyvale, CA 94089&#xa;United States of America",
+              "@wd:Defaulted_Business_Site_Address": "1",
+              "wd:Country_Reference": {
+                "wd:ID": [
+                  {
+                    "@wd:type": "WID",
+                    "#text": "bc33aa3152ec42d4995f4791a106ed09"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-1_Alpha-2_Code",
+                    "#text": "US"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-1_Alpha-3_Code",
+                    "#text": "USA"
+                  },
+                  {
+                    "@wd:type": "OPM_Country_Code",
+                    "#text": "US"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-1_Numeric-3_Code",
+                    "#text": "840"
+                  }
+                ]
+              },
+              "wd:Last_Modified": "2018-04-26T05:40:24.158-07:00",
+              "wd:Address_Line_Data": {
+                "@wd:Type": "ADDRESS_LINE_1",
+                "@wd:Descriptor": "Address Line 1",
+                "#text": "111 W Java Drive"
+              },
+              "wd:Municipality": "Sunnyvale",
+              "wd:Country_Region_Reference": {
+                "wd:ID": [
+                  {
+                    "@wd:type": "WID",
+                    "#text": "ec3d210e4240442e99a28fa70419aec5"
+                  },
+                  {
+                    "@wd:type": "Country_Region_ID",
+                    "#text": "USA-CA"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-2_Code",
+                    "#text": "CA"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-2_Country-Region_Code",
+                    "#text": "US-CA"
+                  },
+                  {
+                    "@wd:type": "OPM_Country_Subdivision_Code",
+                    "#text": "US-CA"
+                  }
+                ]
+              },
+              "wd:Country_Region_Descriptor": "California",
+              "wd:Postal_Code": "94089",
+              "wd:Address_Reference": {
+                "wd:ID": [
+                  {
+                    "@wd:type": "WID",
+                    "#text": "4e2afab661ef01bd31e88dd5ed1457f4"
+                  },
+                  {
+                    "@wd:type": "Address_ID",
+                    "#text": "ADDRESS_REFERENCE-3-13067610"
+                  }
+                ]
+              },
+              "wd:Address_ID": "ADDRESS_REFERENCE-3-13067610"
+            }
+          },
+          "wd:Sold_To_Customer_Reference": {
+            "wd:ID": [
+              {
+                "@wd:type": "WID",
+                "#text": "9844436666b7100501a2f31fff84a6c6"
+              },
+              {
+                "@wd:type": "Customer_Reference_ID",
+                "#text": "27324"
+              },
+              {
+                "@wd:type": "Customer_ID",
+                "#text": "27324"
+              }
+            ]
+          },
+          "wd:Customer_Sold-To_Address_Data": {
+            "wd:Customer_Sold-To_Address_Data": {
+              "@wd:Address_Format_Type": "Basic",
+              "@wd:Formatted_Address": "111 W Java Drive&#xa;Sunnyvale, CA 94089&#xa;United States of America",
+              "@wd:Defaulted_Business_Site_Address": "1",
+              "wd:Country_Reference": {
+                "wd:ID": [
+                  {
+                    "@wd:type": "WID",
+                    "#text": "bc33aa3152ec42d4995f4791a106ed09"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-1_Alpha-2_Code",
+                    "#text": "US"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-1_Alpha-3_Code",
+                    "#text": "USA"
+                  },
+                  {
+                    "@wd:type": "OPM_Country_Code",
+                    "#text": "US"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-1_Numeric-3_Code",
+                    "#text": "840"
+                  }
+                ]
+              },
+              "wd:Last_Modified": "2018-04-26T05:40:24.158-07:00",
+              "wd:Address_Line_Data": {
+                "@wd:Type": "ADDRESS_LINE_1",
+                "@wd:Descriptor": "Address Line 1",
+                "#text": "111 W Java Drive"
+              },
+              "wd:Municipality": "Sunnyvale",
+              "wd:Country_Region_Reference": {
+                "wd:ID": [
+                  {
+                    "@wd:type": "WID",
+                    "#text": "ec3d210e4240442e99a28fa70419aec5"
+                  },
+                  {
+                    "@wd:type": "Country_Region_ID",
+                    "#text": "USA-CA"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-2_Code",
+                    "#text": "CA"
+                  },
+                  {
+                    "@wd:type": "ISO_3166-2_Country-Region_Code",
+                    "#text": "US-CA"
+                  },
+                  {
+                    "@wd:type": "OPM_Country_Subdivision_Code",
+                    "#text": "US-CA"
+                  }
+                ]
+              },
+              "wd:Country_Region_Descriptor": "California",
+              "wd:Postal_Code": "94089",
+              "wd:Address_Reference": {
+                "wd:ID": [
+                  {
+                    "@wd:type": "WID",
+                    "#text": "4e2afab661ef01bd31e88dd5ed1457f4"
+                  },
+                  {
+                    "@wd:type": "Address_ID",
+                    "#text": "ADDRESS_REFERENCE-3-13067610"
+                  }
+                ]
+              },
+              "wd:Address_ID": "ADDRESS_REFERENCE-3-13067610"
+            }
+          },
+          "wd:Worktags_Reference": [
+            {
+              "wd:ID": [
+                {
+                  "@wd:type": "WID",
+                  "#text": "735a8e93eece1075faedf2bb78807aee"
+                },
+                {
+                  "@wd:type": "Organization_Reference_ID",
+                  "#text": "CC_1040"
+                },
+                {
+                  "@wd:type": "Cost_Center_Reference_ID",
+                  "#text": "CC_1040"
+                }
+              ]
+            },
+            {
+              "wd:ID": [
+                {
+                  "@wd:type": "WID",
+                  "#text": "9844436666b710053c6df73e547bddce"
+                },
+                {
+                  "@wd:type": "Custom_Worktag_2_ID",
+                  "#text": "MC"
+                }
+              ]
+            },
+            {
+              "wd:ID": [
+                {
+                  "@wd:type": "WID",
+                  "#text": "d02b5378d41d011e9e143127de65d932"
+                },
+                {
+                  "@wd:type": "Organization_Reference_ID",
+                  "#text": "RPA_036"
+                },
+                {
+                  "@wd:type": "Custom_Organization_Reference_ID",
+                  "#text": "RPA_036"
+                }
+              ]
+            },
+            {
+              "wd:ID": [
+                {
+                  "@wd:type": "WID",
+                  "#text": "9844436666b710053c6ddc724e65dd98"
+                },
+                {
+                  "@wd:type": "Custom_Worktag_3_ID",
+                  "#text": "Blended Hourly"
+                }
+              ]
+            },
+            {
+              "wd:ID": [
+                {
+                  "@wd:type": "WID",
+                  "#text": "8e540ad852971059242fdb526822c7a9"
+                },
+                {
+                  "@wd:type": "Custom_Worktag_08_ID",
+                  "#text": "COS"
+                }
+              ]
+            },
+            {
+              "wd:ID": [
+                {
+                  "@wd:type": "WID",
+                  "#text": "9844436666b710053c6da9a17f52dd36"
+                },
+                {
+                  "@wd:type": "Custom_Worktag_09_ID",
+                  "#text": "REV_GEN"
+                }
+              ]
+            },
+            {
+              "wd:ID": [
+                {
+                  "@wd:type": "WID",
+                  "#text": "9844436666b710053c6dcdf6d643dd88"
+                },
+                {
+                  "@wd:type": "Custom_Worktag_4_ID",
+                  "#text": "IMP"
+                }
+              ]
+            }
+          ],
+          "wd:Customer_Category_of_Bill_to_Customer_Reference": {
+            "wd:ID": [
+              {
+                "@wd:type": "WID",
+                "#text": "9844436666b71003559f4fa1661301cb"
+              },
+              {
+                "@wd:type": "Customer_Category_ID",
+                "#text": "Business Services"
+              }
+            ]
+          }
+        }
+      },
+      "wd:Taxable_Document_Line_for_Tax_Calculation_Data": {
+        "wd:Line_Reference_ID": "CUSTOMER_INVOICE_LINE-6-2038751",
+        "wd:Company_Reference": {
+          "wd:ID": [
+            {
+              "@wd:type": "WID",
+              "#text": "dde36542331f1000b66f45813fbd0000"
+            },
+            {
+              "@wd:type": "Organization_Reference_ID",
+              "#text": "RRO"
+            },
+            {
+              "@wd:type": "Company_Reference_ID",
+              "#text": "RRO"
+            }
+          ]
+        },
+        "wd:Item_Reference": {
+          "wd:ID": [
+            {
+              "@wd:type": "WID",
+              "#text": "47ed074eabdc0109849a3022361536fd"
+            },
+            {
+              "@wd:type": "Sales_Item_ID",
+              "#text": "Financial Reporting"
+            }
+          ]
+        },
+        "wd:Accounting_Category_Reference": {
+          "wd:ID": [
+            {
+              "@wd:type": "WID",
+              "#text": "47ed074eabdc0184d39f26523415a7f4"
+            },
+            {
+              "@wd:type": "Revenue_Category_ID",
+              "#text": "Valuation Services - Fixed Fee"
+            }
+          ]
+        },
+        "wd:Quantity": "1",
+        "wd:Unit_of_Measure_Reference": {
+          "wd:ID": [
+            {
+              "@wd:type": "WID",
+              "#text": "9c5ef1aaea1c10506a65b069f3d779a8"
+            },
+            {
+              "@wd:type": "UN_CEFACT_Common_Code_ID",
+              "#text": "EA"
+            }
+          ]
+        },
+        "wd:Unit_Cost": "8000",
+        "wd:Extended_Amount": "8000",
+        "wd:Customer_Invoice_Line_for_Tax_Calculation_Data": null
+      }
+    }
+  }
+]
