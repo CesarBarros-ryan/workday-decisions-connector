@@ -1,294 +1,1014 @@
 {
-  "document_reference": [
-    "796aa1abab58900206743dffe07f0000",
-    "42259d037f4e90015177c3ded4e70000",
-    "796aa1abab589001b74899c151a70000",
-    "42259d037f4e9001b9e2fe2c8fc60000",
-    "35e470ab13159000ad7bb37d73000000",
-    "35e470ab1315900151b4aef6f4230000",
-    "3892a80e96519001485e8befceb00000"
-  ],
-  "taxable_document_line_reference": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-  ],
-  "company_reference": [
-    "dde36542331f1000b66f45813fbd0000",
-    "dde36542331f1000b66f45813fbd0000",
-    "dde36542331f1000b66f45813fbd0000",
-    "dde36542331f1000b66f45813fbd0000",
-    "dde36542331f1000b66f45813fbd0000",
-    "dde36542331f1000b66f45813fbd0000",
-    "dde36542331f1000b66f45813fbd0000"
-  ],
   "document_wids": [
-    [
-      "796aa1abab58900206743dffe07f0000",
-      "dde36542331f1000b66f45813fbd0000",
-      "9e996ffdd3e14da0ba7275d5400bafd4",
-      "b281143cb2ef1006d354b950487c80bb",
-      "bc33aa3152ec42d4995f4791a106ed09",
-      "205ef21c556342268847466c48ec5a8c",
-      "812ee401720e1000a654cd984c090001",
-      "dde36542331f1000b66f45813fbd0000",
-      "e65354d6fcc801e7d7db46d667016397",
-      "9c5ef1aaea1c10506a65b069f3d779a8",
-      "9844436666b710053c6da9a17f52dd36",
-      "8e540ad852971059242fdb526822c7a9",
-      "9844436666b7100501a2f31fff84a6c6",
-      "ba5128dd27c51000c5c7c12cf0690000",
-      "9844436666b710053c6dcdf6d643dd88",
-      "9844436666b710053c6ddc724e65dd98",
-      "735a8e93eece1075faedf2bb78807aee",
-      "9844436666b710053c6df73e547bddce",
-      "fb3339f0313701c5541ad4971b019c80"
-    ],
-    [
-      "42259d037f4e90015177c3ded4e70000",
-      "dde36542331f1000b66f45813fbd0000",
-      "eef222b9feb644019686f0824464eedc",
-      "85a16048530f1000245f95609e7b0000",
-      "85a16048530f1000245f95609e7b0000",
-      "d02b5378d41d01559df06827de651033",
-      "22dce8e78c011067bf10440032605907",
-      "9844436666b710053c6dcae4df08dd43",
-      "9844436666b710053c6ddcdb85bcdda0",
-      "9844436666b710053c6df73e547bddce",
-      "8e540ad852971059242fdb526822c7a9",
-      "9844436666b710053c6da9a17f52dd36",
-      "9844436666b71003559f4fa1661301cb",
-      "dde36542331f1000b66f45813fbd0000",
-      "b955afeea4a5010f96af5f2a640e73cb",
-      "9844436666b710035bf8bfcd082d070a"
-    ],
-    [
-      "796aa1abab589001b74899c151a70000",
-      "dde36542331f1000b66f45813fbd0000",
-      "9e996ffdd3e14da0ba7275d5400bafd4",
-      "9844436666b7100501a2f31fff84a6c6",
-      "bc33aa3152ec42d4995f4791a106ed09",
-      "ec3d210e4240442e99a28fa70419aec5",
-      "4e2afab661ef01bd31e88dd5ed1457f4",
-      "9844436666b7100501a2f31fff84a6c6",
-      "bc33aa3152ec42d4995f4791a106ed09",
-      "ec3d210e4240442e99a28fa70419aec5",
-      "4e2afab661ef01bd31e88dd5ed1457f4",
-      "735a8e93eece1075faedf2bb78807aee",
-      "9844436666b710053c6df73e547bddce",
-      "d02b5378d41d011e9e143127de65d932",
-      "9844436666b710053c6ddc724e65dd98",
-      "8e540ad852971059242fdb526822c7a9",
-      "9844436666b710053c6da9a17f52dd36",
-      "9844436666b710053c6dcdf6d643dd88",
-      "9844436666b71003559f4fa1661301cb",
-      "dde36542331f1000b66f45813fbd0000",
-      "47ed074eabdc0109849a3022361536fd",
-      "47ed074eabdc0184d39f26523415a7f4",
-      "9c5ef1aaea1c10506a65b069f3d779a8"
-    ],
-    [
-      "42259d037f4e9001b9e2fe2c8fc60000",
-      "dde36542331f1000b66f45813fbd0000",
-      "9e996ffdd3e14da0ba7275d5400bafd4",
-      "9844436666b7100501a2f31fff84a6c6",
-      "bc33aa3152ec42d4995f4791a106ed09",
-      "ec3d210e4240442e99a28fa70419aec5",
-      "4e2afab661ef01bd31e88dd5ed1457f4",
-      "9844436666b7100501a2f31fff84a6c6",
-      "bc33aa3152ec42d4995f4791a106ed09",
-      "ec3d210e4240442e99a28fa70419aec5",
-      "4e2afab661ef01bd31e88dd5ed1457f4",
-      "ba5128dd27c51000c5c7c12cf0690000",
-      "735a8e93eece1075faedf2bb78807aee",
-      "9844436666b710053c6df73e547bddce",
-      "9844436666b710053c6ddc724e65dd98",
-      "8e540ad852971059242fdb526822c7a9",
-      "9844436666b710053c6da9a17f52dd36",
-      "9844436666b710053c6dcdf6d643dd88",
-      "9844436666b71003559f4fa1661301cb",
-      "dde36542331f1000b66f45813fbd0000",
-      "b955afeea4a5010f96af5f2a640e73cb",
-      "9844436666b710035bf8bfcd082d070a",
-      "9c5ef1aaea1c10506a65b069f3d779a8"
-    ],
-    [
-      "35e470ab13159000ad7bb37d73000000",
-      "dde36542331f1000b66f45813fbd0000",
-      "9e996ffdd3e14da0ba7275d5400bafd4",
-      "dc76caa6446c11de98360015c5e6daf6",
-      "9844436666b7100501a2f31fff84a6c6",
-      "bc33aa3152ec42d4995f4791a106ed09",
-      "ec3d210e4240442e99a28fa70419aec5",
-      "4e2afab661ef01bd31e88dd5ed1457f4",
-      "9844436666b7100501a2f31fff84a6c6",
-      "bc33aa3152ec42d4995f4791a106ed09",
-      "ec3d210e4240442e99a28fa70419aec5",
-      "4e2afab661ef01bd31e88dd5ed1457f4",
-      "735a8e93eece1075faedf2bb78807aee",
-      "9844436666b710053c6df73e547bddce",
-      "d02b5378d41d011e9e143127de65d932",
-      "9844436666b710053c6ddc724e65dd98",
-      "8e540ad852971059242fdb526822c7a9",
-      "9844436666b710053c6da9a17f52dd36",
-      "9844436666b710053c6dcdf6d643dd88",
-      "9844436666b71003559f4fa1661301cb",
-      "dde36542331f1000b66f45813fbd0000",
-      "47ed074eabdc0109849a3022361536fd",
-      "47ed074eabdc0184d39f26523415a7f4",
-      "9c5ef1aaea1c10506a65b069f3d779a8"
-    ],
-    [
-      "35e470ab1315900151b4aef6f4230000",
-      "dde36542331f1000b66f45813fbd0000",
-      "9e996ffdd3e14da0ba7275d5400bafd4",
-      "e264bc68581342baa70ab61bf71032fe",
-      "9844436666b7100501a2f31fff84a6c6",
-      "bc33aa3152ec42d4995f4791a106ed09",
-      "ec3d210e4240442e99a28fa70419aec5",
-      "4e2afab661ef01bd31e88dd5ed1457f4",
-      "9844436666b7100501a2f31fff84a6c6",
-      "bc33aa3152ec42d4995f4791a106ed09",
-      "ec3d210e4240442e99a28fa70419aec5",
-      "4e2afab661ef01bd31e88dd5ed1457f4",
-      "735a8e93eece1075faedf2bb78807aee",
-      "9844436666b710053c6df73e547bddce",
-      "d02b5378d41d011e9e143127de65d932",
-      "9844436666b710053c6ddc724e65dd98",
-      "8e540ad852971059242fdb526822c7a9",
-      "9844436666b710053c6da9a17f52dd36",
-      "9844436666b710053c6dcdf6d643dd88",
-      "9844436666b71003559f4fa1661301cb",
-      "dde36542331f1000b66f45813fbd0000",
-      "47ed074eabdc0109849a3022361536fd",
-      "47ed074eabdc0184d39f26523415a7f4",
-      "9c5ef1aaea1c10506a65b069f3d779a8"
-    ],
-    [
-      "3892a80e96519001485e8befceb00000",
-      "dde36542331f1000b66f45813fbd0000",
-      "9e996ffdd3e14da0ba7275d5400bafd4",
-      "e264bc68581342baa70ab61bf71032fe",
-      "9844436666b7100501a2f31fff84a6c6",
-      "bc33aa3152ec42d4995f4791a106ed09",
-      "ec3d210e4240442e99a28fa70419aec5",
-      "4e2afab661ef01bd31e88dd5ed1457f4",
-      "9844436666b7100501a2f31fff84a6c6",
-      "bc33aa3152ec42d4995f4791a106ed09",
-      "ec3d210e4240442e99a28fa70419aec5",
-      "4e2afab661ef01bd31e88dd5ed1457f4",
-      "735a8e93eece1075faedf2bb78807aee",
-      "9844436666b710053c6df73e547bddce",
-      "d02b5378d41d011e9e143127de65d932",
-      "9844436666b710053c6ddc724e65dd98",
-      "8e540ad852971059242fdb526822c7a9",
-      "9844436666b710053c6da9a17f52dd36",
-      "9844436666b710053c6dcdf6d643dd88",
-      "9844436666b71003559f4fa1661301cb",
-      "dde36542331f1000b66f45813fbd0000",
-      "47ed074eabdc0109849a3022361536fd",
-      "47ed074eabdc0184d39f26523415a7f4",
-      "9c5ef1aaea1c10506a65b069f3d779a8"
-    ]
-  ],
-  "all_wids": [
-    "796aa1abab58900206743dffe07f0000",
-    "dde36542331f1000b66f45813fbd0000",
-    "9e996ffdd3e14da0ba7275d5400bafd4",
-    "b281143cb2ef1006d354b950487c80bb",
-    "bc33aa3152ec42d4995f4791a106ed09",
-    "205ef21c556342268847466c48ec5a8c",
-    "812ee401720e1000a654cd984c090001",
-    "e65354d6fcc801e7d7db46d667016397",
-    "9c5ef1aaea1c10506a65b069f3d779a8",
-    "9844436666b710053c6da9a17f52dd36",
-    "8e540ad852971059242fdb526822c7a9",
-    "9844436666b7100501a2f31fff84a6c6",
-    "ba5128dd27c51000c5c7c12cf0690000",
-    "9844436666b710053c6dcdf6d643dd88",
-    "9844436666b710053c6ddc724e65dd98",
-    "735a8e93eece1075faedf2bb78807aee",
-    "9844436666b710053c6df73e547bddce",
-    "fb3339f0313701c5541ad4971b019c80",
-    "42259d037f4e90015177c3ded4e70000",
-    "eef222b9feb644019686f0824464eedc",
-    "85a16048530f1000245f95609e7b0000",
-    "d02b5378d41d01559df06827de651033",
-    "22dce8e78c011067bf10440032605907",
-    "9844436666b710053c6dcae4df08dd43",
-    "9844436666b710053c6ddcdb85bcdda0",
-    "9844436666b71003559f4fa1661301cb",
-    "b955afeea4a5010f96af5f2a640e73cb",
-    "9844436666b710035bf8bfcd082d070a",
-    "796aa1abab589001b74899c151a70000",
-    "ec3d210e4240442e99a28fa70419aec5",
-    "4e2afab661ef01bd31e88dd5ed1457f4",
-    "d02b5378d41d011e9e143127de65d932",
-    "47ed074eabdc0109849a3022361536fd",
-    "47ed074eabdc0184d39f26523415a7f4",
-    "42259d037f4e9001b9e2fe2c8fc60000",
-    "35e470ab13159000ad7bb37d73000000",
-    "dc76caa6446c11de98360015c5e6daf6",
-    "35e470ab1315900151b4aef6f4230000",
-    "e264bc68581342baa70ab61bf71032fe",
-    "3892a80e96519001485e8befceb00000"
-  ],
-  "document_number": [
-    "SINV-00142584",
-    "822939",
-    "822940",
-    "822941",
-    "822943",
-    "822945",
-    "822944"
-  ],
-  "currency": [
-    "USD",
-    "RON",
-    "USD",
-    "USD",
-    "USD",
-    "USD",
-    "USD"
-  ],
-  "document_date": [
-    "2025-09-26",
-    "2025-09-24",
-    "2025-09-25",
-    "2025-09-25",
-    "2025-10-06",
-    "2025-10-08",
-    "2025-10-08"
-  ],
-  "supplier_invoice_number": [
-    "test1",
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-  ],
-  "entered_tax_amount": [
-    "0",
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-  ],
-  "amount_inclusive_of_tax": [
-    "0",
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
+    {
+      "wd:Taxable_Document_for_Tax_Calculation_Reference_WID": [
+        "796aa1abab58900206743dffe07f0000"
+      ],
+      "wd:Taxable_Document_for_Tax_Calculation_Reference_Supplier_Invoice_Reference_ID": [
+        "SUPPLIER_INVOICE-6-143226"
+      ],
+      "wd:Company_Reference_WID": [
+        "dde36542331f1000b66f45813fbd0000",
+        "dde36542331f1000b66f45813fbd0000"
+      ],
+      "wd:Company_Reference_Organization_Reference_ID": [
+        "RRO",
+        "RRO"
+      ],
+      "wd:Company_Reference_Company_Reference_ID": [
+        "RRO",
+        "RRO"
+      ],
+      "wd:Currency_Reference_WID": [
+        "9e996ffdd3e14da0ba7275d5400bafd4"
+      ],
+      "wd:Currency_Reference_Currency_ID": [
+        "USD"
+      ],
+      "wd:Currency_Reference_Currency_Numeric_Code": [
+        "840"
+      ],
+      "wd:Supplier_Reference_WID": [
+        "b281143cb2ef1006d354b950487c80bb"
+      ],
+      "wd:Supplier_Reference_Supplier_Reference_ID": [
+        "RAM00450US"
+      ],
+      "wd:Supplier_Reference_Supplier_ID": [
+        "S-00005068"
+      ],
+      "wd:Country_Reference_WID": [
+        "bc33aa3152ec42d4995f4791a106ed09"
+      ],
+      "wd:Country_Reference_ISO_3166-1_Alpha-2_Code": [
+        "US"
+      ],
+      "wd:Country_Reference_ISO_3166-1_Alpha-3_Code": [
+        "USA"
+      ],
+      "wd:Country_Reference_OPM_Country_Code": [
+        "US"
+      ],
+      "wd:Country_Reference_ISO_3166-1_Numeric-3_Code": [
+        "840"
+      ],
+      "wd:Country_Region_Reference_WID": [
+        "205ef21c556342268847466c48ec5a8c"
+      ],
+      "wd:Country_Region_Reference_Country_Region_ID": [
+        "USA-OK"
+      ],
+      "wd:Country_Region_Reference_ISO_3166-2_Code": [
+        "OK"
+      ],
+      "wd:Country_Region_Reference_ISO_3166-2_Country-Region_Code": [
+        "US-OK"
+      ],
+      "wd:Address_Reference_WID": [
+        "812ee401720e1000a654cd984c090001"
+      ],
+      "wd:Address_Reference_Address_ID": [
+        "ADDRESS_REFERENCE-3-13530288"
+      ],
+      "wd:Accounting_Category_Reference_WID": [
+        "e65354d6fcc801e7d7db46d667016397"
+      ],
+      "wd:Accounting_Category_Reference_Spend_Category_ID": [
+        "LEASE_PMT_OFFICE_SPACE"
+      ],
+      "wd:Unit_of_Measure_Reference_WID": [
+        "9c5ef1aaea1c10506a65b069f3d779a8"
+      ],
+      "wd:Unit_of_Measure_Reference_UN_CEFACT_Common_Code_ID": [
+        "EA"
+      ],
+      "wd:Worktags_Reference_WID": [
+        "9844436666b710053c6da9a17f52dd36",
+        "8e540ad852971059242fdb526822c7a9",
+        "9844436666b7100501a2f31fff84a6c6",
+        "ba5128dd27c51000c5c7c12cf0690000",
+        "9844436666b710053c6dcdf6d643dd88",
+        "9844436666b710053c6ddc724e65dd98",
+        "735a8e93eece1075faedf2bb78807aee",
+        "9844436666b710053c6df73e547bddce",
+        "fb3339f0313701c5541ad4971b019c80"
+      ],
+      "wd:Worktags_Reference_Custom_Worktag_09_ID": [
+        "REV_GEN"
+      ],
+      "wd:Worktags_Reference_Custom_Worktag_08_ID": [
+        "COS"
+      ],
+      "wd:Worktags_Reference_Customer_Reference_ID": [
+        "27324"
+      ],
+      "wd:Worktags_Reference_Customer_ID": [
+        "27324"
+      ],
+      "wd:Worktags_Reference_Organization_Reference_ID": [
+        "RPA_211",
+        "CC_1040"
+      ],
+      "wd:Worktags_Reference_Custom_Organization_Reference_ID": [
+        "RPA_211"
+      ],
+      "wd:Worktags_Reference_Custom_Worktag_4_ID": [
+        "IMP"
+      ],
+      "wd:Worktags_Reference_Custom_Worktag_3_ID": [
+        "Blended Hourly"
+      ],
+      "wd:Worktags_Reference_Cost_Center_Reference_ID": [
+        "CC_1040"
+      ],
+      "wd:Worktags_Reference_Custom_Worktag_2_ID": [
+        "MC"
+      ],
+      "wd:Worktags_Reference_Project_ID": [
+        "273248000.006"
+      ]
+    },
+    {
+      "wd:Taxable_Document_for_Tax_Calculation_Reference_WID": [
+        "42259d037f4e90015177c3ded4e70000"
+      ],
+      "wd:Taxable_Document_for_Tax_Calculation_Reference_Customer_Invoice_Reference_ID": [
+        "CUSTOMER_INVOICE-6-723728"
+      ],
+      "wd:Company_Reference_WID": [
+        "dde36542331f1000b66f45813fbd0000",
+        "dde36542331f1000b66f45813fbd0000"
+      ],
+      "wd:Company_Reference_Organization_Reference_ID": [
+        "RRO",
+        "RRO"
+      ],
+      "wd:Company_Reference_Company_Reference_ID": [
+        "RRO",
+        "RRO"
+      ],
+      "wd:Currency_Reference_WID": [
+        "eef222b9feb644019686f0824464eedc"
+      ],
+      "wd:Currency_Reference_Currency_ID": [
+        "RON"
+      ],
+      "wd:Currency_Reference_Currency_Numeric_Code": [
+        "946"
+      ],
+      "wd:Bill_To_Customer_Reference_WID": [
+        "85a16048530f1000245f95609e7b0000"
+      ],
+      "wd:Bill_To_Customer_Reference_Customer_Reference_ID": [
+        "58061"
+      ],
+      "wd:Bill_To_Customer_Reference_Customer_ID": [
+        "58061"
+      ],
+      "wd:Sold_To_Customer_Reference_WID": [
+        "85a16048530f1000245f95609e7b0000"
+      ],
+      "wd:Sold_To_Customer_Reference_Customer_Reference_ID": [
+        "58061"
+      ],
+      "wd:Sold_To_Customer_Reference_Customer_ID": [
+        "58061"
+      ],
+      "wd:Worktags_Reference_WID": [
+        "d02b5378d41d01559df06827de651033",
+        "22dce8e78c011067bf10440032605907",
+        "9844436666b710053c6dcae4df08dd43",
+        "9844436666b710053c6ddcdb85bcdda0",
+        "9844436666b710053c6df73e547bddce",
+        "8e540ad852971059242fdb526822c7a9",
+        "9844436666b710053c6da9a17f52dd36"
+      ],
+      "wd:Worktags_Reference_Organization_Reference_ID": [
+        "RPA_096",
+        "CC_1028"
+      ],
+      "wd:Worktags_Reference_Custom_Organization_Reference_ID": [
+        "RPA_096"
+      ],
+      "wd:Worktags_Reference_Cost_Center_Reference_ID": [
+        "CC_1028"
+      ],
+      "wd:Worktags_Reference_Custom_Worktag_4_ID": [
+        "ARV"
+      ],
+      "wd:Worktags_Reference_Custom_Worktag_3_ID": [
+        "Performance-based"
+      ],
+      "wd:Worktags_Reference_Custom_Worktag_2_ID": [
+        "MC"
+      ],
+      "wd:Worktags_Reference_Custom_Worktag_08_ID": [
+        "COS"
+      ],
+      "wd:Worktags_Reference_Custom_Worktag_09_ID": [
+        "REV_GEN"
+      ],
+      "wd:Customer_Category_of_Bill_to_Customer_Reference_WID": [
+        "9844436666b71003559f4fa1661301cb"
+      ],
+      "wd:Customer_Category_of_Bill_to_Customer_Reference_Customer_Category_ID": [
+        "Business Services"
+      ],
+      "wd:Item_Reference_WID": [
+        "b955afeea4a5010f96af5f2a640e73cb"
+      ],
+      "wd:Item_Reference_Sales_Item_ID": [
+        "Valuation Services"
+      ],
+      "wd:Accounting_Category_Reference_WID": [
+        "9844436666b710035bf8bfcd082d070a"
+      ],
+      "wd:Accounting_Category_Reference_Revenue_Category_ID": [
+        "HOURLY_FEES"
+      ]
+    },
+    {
+      "wd:Taxable_Document_for_Tax_Calculation_Reference_WID": [
+        "796aa1abab589001b74899c151a70000"
+      ],
+      "wd:Taxable_Document_for_Tax_Calculation_Reference_Customer_Invoice_Reference_ID": [
+        "CUSTOMER_INVOICE-6-723735"
+      ],
+      "wd:Company_Reference_WID": [
+        "dde36542331f1000b66f45813fbd0000",
+        "dde36542331f1000b66f45813fbd0000"
+      ],
+      "wd:Company_Reference_Organization_Reference_ID": [
+        "RRO",
+        "RRO"
+      ],
+      "wd:Company_Reference_Company_Reference_ID": [
+        "RRO",
+        "RRO"
+      ],
+      "wd:Currency_Reference_WID": [
+        "9e996ffdd3e14da0ba7275d5400bafd4"
+      ],
+      "wd:Currency_Reference_Currency_ID": [
+        "USD"
+      ],
+      "wd:Currency_Reference_Currency_Numeric_Code": [
+        "840"
+      ],
+      "wd:Bill_To_Customer_Reference_WID": [
+        "9844436666b7100501a2f31fff84a6c6"
+      ],
+      "wd:Bill_To_Customer_Reference_Customer_Reference_ID": [
+        "27324"
+      ],
+      "wd:Bill_To_Customer_Reference_Customer_ID": [
+        "27324"
+      ],
+      "wd:Country_Reference_WID": [
+        "bc33aa3152ec42d4995f4791a106ed09",
+        "bc33aa3152ec42d4995f4791a106ed09"
+      ],
+      "wd:Country_Reference_ISO_3166-1_Alpha-2_Code": [
+        "US",
+        "US"
+      ],
+      "wd:Country_Reference_ISO_3166-1_Alpha-3_Code": [
+        "USA",
+        "USA"
+      ],
+      "wd:Country_Reference_OPM_Country_Code": [
+        "US",
+        "US"
+      ],
+      "wd:Country_Reference_ISO_3166-1_Numeric-3_Code": [
+        "840",
+        "840"
+      ],
+      "wd:Country_Region_Reference_WID": [
+        "ec3d210e4240442e99a28fa70419aec5",
+        "ec3d210e4240442e99a28fa70419aec5"
+      ],
+      "wd:Country_Region_Reference_Country_Region_ID": [
+        "USA-CA",
+        "USA-CA"
+      ],
+      "wd:Country_Region_Reference_ISO_3166-2_Code": [
+        "CA",
+        "CA"
+      ],
+      "wd:Country_Region_Reference_ISO_3166-2_Country-Region_Code": [
+        "US-CA",
+        "US-CA"
+      ],
+      "wd:Country_Region_Reference_OPM_Country_Subdivision_Code": [
+        "US-CA",
+        "US-CA"
+      ],
+      "wd:Address_Reference_WID": [
+        "4e2afab661ef01bd31e88dd5ed1457f4",
+        "4e2afab661ef01bd31e88dd5ed1457f4"
+      ],
+      "wd:Address_Reference_Address_ID": [
+        "ADDRESS_REFERENCE-3-13067610",
+        "ADDRESS_REFERENCE-3-13067610"
+      ],
+      "wd:Sold_To_Customer_Reference_WID": [
+        "9844436666b7100501a2f31fff84a6c6"
+      ],
+      "wd:Sold_To_Customer_Reference_Customer_Reference_ID": [
+        "27324"
+      ],
+      "wd:Sold_To_Customer_Reference_Customer_ID": [
+        "27324"
+      ],
+      "wd:Worktags_Reference_WID": [
+        "735a8e93eece1075faedf2bb78807aee",
+        "9844436666b710053c6df73e547bddce",
+        "d02b5378d41d011e9e143127de65d932",
+        "9844436666b710053c6ddc724e65dd98",
+        "8e540ad852971059242fdb526822c7a9",
+        "9844436666b710053c6da9a17f52dd36",
+        "9844436666b710053c6dcdf6d643dd88"
+      ],
+      "wd:Worktags_Reference_Organization_Reference_ID": [
+        "CC_1040",
+        "RPA_036"
+      ],
+      "wd:Worktags_Reference_Cost_Center_Reference_ID": [
+        "CC_1040"
+      ],
+      "wd:Worktags_Reference_Custom_Worktag_2_ID": [
+        "MC"
+      ],
+      "wd:Worktags_Reference_Custom_Organization_Reference_ID": [
+        "RPA_036"
+      ],
+      "wd:Worktags_Reference_Custom_Worktag_3_ID": [
+        "Blended Hourly"
+      ],
+      "wd:Worktags_Reference_Custom_Worktag_08_ID": [
+        "COS"
+      ],
+      "wd:Worktags_Reference_Custom_Worktag_09_ID": [
+        "REV_GEN"
+      ],
+      "wd:Worktags_Reference_Custom_Worktag_4_ID": [
+        "IMP"
+      ],
+      "wd:Customer_Category_of_Bill_to_Customer_Reference_WID": [
+        "9844436666b71003559f4fa1661301cb"
+      ],
+      "wd:Customer_Category_of_Bill_to_Customer_Reference_Customer_Category_ID": [
+        "Business Services"
+      ],
+      "wd:Item_Reference_WID": [
+        "47ed074eabdc0109849a3022361536fd"
+      ],
+      "wd:Item_Reference_Sales_Item_ID": [
+        "Financial Reporting"
+      ],
+      "wd:Accounting_Category_Reference_WID": [
+        "47ed074eabdc0184d39f26523415a7f4"
+      ],
+      "wd:Accounting_Category_Reference_Revenue_Category_ID": [
+        "Valuation Services - Fixed Fee"
+      ],
+      "wd:Unit_of_Measure_Reference_WID": [
+        "9c5ef1aaea1c10506a65b069f3d779a8"
+      ],
+      "wd:Unit_of_Measure_Reference_UN_CEFACT_Common_Code_ID": [
+        "EA"
+      ]
+    },
+    {
+      "wd:Taxable_Document_for_Tax_Calculation_Reference_WID": [
+        "42259d037f4e9001b9e2fe2c8fc60000"
+      ],
+      "wd:Taxable_Document_for_Tax_Calculation_Reference_Customer_Invoice_Reference_ID": [
+        "CUSTOMER_INVOICE-6-723743"
+      ],
+      "wd:Company_Reference_WID": [
+        "dde36542331f1000b66f45813fbd0000",
+        "dde36542331f1000b66f45813fbd0000"
+      ],
+      "wd:Company_Reference_Organization_Reference_ID": [
+        "RRO",
+        "RRO"
+      ],
+      "wd:Company_Reference_Company_Reference_ID": [
+        "RRO",
+        "RRO"
+      ],
+      "wd:Currency_Reference_WID": [
+        "9e996ffdd3e14da0ba7275d5400bafd4"
+      ],
+      "wd:Currency_Reference_Currency_ID": [
+        "USD"
+      ],
+      "wd:Currency_Reference_Currency_Numeric_Code": [
+        "840"
+      ],
+      "wd:Bill_To_Customer_Reference_WID": [
+        "9844436666b7100501a2f31fff84a6c6"
+      ],
+      "wd:Bill_To_Customer_Reference_Customer_Reference_ID": [
+        "27324"
+      ],
+      "wd:Bill_To_Customer_Reference_Customer_ID": [
+        "27324"
+      ],
+      "wd:Country_Reference_WID": [
+        "bc33aa3152ec42d4995f4791a106ed09",
+        "bc33aa3152ec42d4995f4791a106ed09"
+      ],
+      "wd:Country_Reference_ISO_3166-1_Alpha-2_Code": [
+        "US",
+        "US"
+      ],
+      "wd:Country_Reference_ISO_3166-1_Alpha-3_Code": [
+        "USA",
+        "USA"
+      ],
+      "wd:Country_Reference_OPM_Country_Code": [
+        "US",
+        "US"
+      ],
+      "wd:Country_Reference_ISO_3166-1_Numeric-3_Code": [
+        "840",
+        "840"
+      ],
+      "wd:Country_Region_Reference_WID": [
+        "ec3d210e4240442e99a28fa70419aec5",
+        "ec3d210e4240442e99a28fa70419aec5"
+      ],
+      "wd:Country_Region_Reference_Country_Region_ID": [
+        "USA-CA",
+        "USA-CA"
+      ],
+      "wd:Country_Region_Reference_ISO_3166-2_Code": [
+        "CA",
+        "CA"
+      ],
+      "wd:Country_Region_Reference_ISO_3166-2_Country-Region_Code": [
+        "US-CA",
+        "US-CA"
+      ],
+      "wd:Country_Region_Reference_OPM_Country_Subdivision_Code": [
+        "US-CA",
+        "US-CA"
+      ],
+      "wd:Address_Reference_WID": [
+        "4e2afab661ef01bd31e88dd5ed1457f4",
+        "4e2afab661ef01bd31e88dd5ed1457f4"
+      ],
+      "wd:Address_Reference_Address_ID": [
+        "ADDRESS_REFERENCE-3-13067610",
+        "ADDRESS_REFERENCE-3-13067610"
+      ],
+      "wd:Sold_To_Customer_Reference_WID": [
+        "9844436666b7100501a2f31fff84a6c6"
+      ],
+      "wd:Sold_To_Customer_Reference_Customer_Reference_ID": [
+        "27324"
+      ],
+      "wd:Sold_To_Customer_Reference_Customer_ID": [
+        "27324"
+      ],
+      "wd:Worktags_Reference_WID": [
+        "ba5128dd27c51000c5c7c12cf0690000",
+        "735a8e93eece1075faedf2bb78807aee",
+        "9844436666b710053c6df73e547bddce",
+        "9844436666b710053c6ddc724e65dd98",
+        "8e540ad852971059242fdb526822c7a9",
+        "9844436666b710053c6da9a17f52dd36",
+        "9844436666b710053c6dcdf6d643dd88"
+      ],
+      "wd:Worktags_Reference_Organization_Reference_ID": [
+        "RPA_211",
+        "CC_1040"
+      ],
+      "wd:Worktags_Reference_Custom_Organization_Reference_ID": [
+        "RPA_211"
+      ],
+      "wd:Worktags_Reference_Cost_Center_Reference_ID": [
+        "CC_1040"
+      ],
+      "wd:Worktags_Reference_Custom_Worktag_2_ID": [
+        "MC"
+      ],
+      "wd:Worktags_Reference_Custom_Worktag_3_ID": [
+        "Blended Hourly"
+      ],
+      "wd:Worktags_Reference_Custom_Worktag_08_ID": [
+        "COS"
+      ],
+      "wd:Worktags_Reference_Custom_Worktag_09_ID": [
+        "REV_GEN"
+      ],
+      "wd:Worktags_Reference_Custom_Worktag_4_ID": [
+        "IMP"
+      ],
+      "wd:Customer_Category_of_Bill_to_Customer_Reference_WID": [
+        "9844436666b71003559f4fa1661301cb"
+      ],
+      "wd:Customer_Category_of_Bill_to_Customer_Reference_Customer_Category_ID": [
+        "Business Services"
+      ],
+      "wd:Item_Reference_WID": [
+        "b955afeea4a5010f96af5f2a640e73cb"
+      ],
+      "wd:Item_Reference_Sales_Item_ID": [
+        "Valuation Services"
+      ],
+      "wd:Accounting_Category_Reference_WID": [
+        "9844436666b710035bf8bfcd082d070a"
+      ],
+      "wd:Accounting_Category_Reference_Revenue_Category_ID": [
+        "HOURLY_FEES"
+      ],
+      "wd:Unit_of_Measure_Reference_WID": [
+        "9c5ef1aaea1c10506a65b069f3d779a8"
+      ],
+      "wd:Unit_of_Measure_Reference_UN_CEFACT_Common_Code_ID": [
+        "EA"
+      ]
+    },
+    {
+      "wd:Taxable_Document_for_Tax_Calculation_Reference_WID": [
+        "35e470ab13159000ad7bb37d73000000"
+      ],
+      "wd:Taxable_Document_for_Tax_Calculation_Reference_Customer_Invoice_Reference_ID": [
+        "CUSTOMER_INVOICE-6-723772"
+      ],
+      "wd:Company_Reference_WID": [
+        "dde36542331f1000b66f45813fbd0000",
+        "dde36542331f1000b66f45813fbd0000"
+      ],
+      "wd:Company_Reference_Organization_Reference_ID": [
+        "RRO",
+        "RRO"
+      ],
+      "wd:Company_Reference_Company_Reference_ID": [
+        "RRO",
+        "RRO"
+      ],
+      "wd:Currency_Reference_WID": [
+        "9e996ffdd3e14da0ba7275d5400bafd4"
+      ],
+      "wd:Currency_Reference_Currency_ID": [
+        "USD"
+      ],
+      "wd:Currency_Reference_Currency_Numeric_Code": [
+        "840"
+      ],
+      "wd:Third_Party_Tax_Document_Status_Reference_WID": [
+        "dc76caa6446c11de98360015c5e6daf6"
+      ],
+      "wd:Third_Party_Tax_Document_Status_Reference_Document_Status_ID": [
+        "COMPLETE"
+      ],
+      "wd:Bill_To_Customer_Reference_WID": [
+        "9844436666b7100501a2f31fff84a6c6"
+      ],
+      "wd:Bill_To_Customer_Reference_Customer_Reference_ID": [
+        "27324"
+      ],
+      "wd:Bill_To_Customer_Reference_Customer_ID": [
+        "27324"
+      ],
+      "wd:Country_Reference_WID": [
+        "bc33aa3152ec42d4995f4791a106ed09",
+        "bc33aa3152ec42d4995f4791a106ed09"
+      ],
+      "wd:Country_Reference_ISO_3166-1_Alpha-2_Code": [
+        "US",
+        "US"
+      ],
+      "wd:Country_Reference_ISO_3166-1_Alpha-3_Code": [
+        "USA",
+        "USA"
+      ],
+      "wd:Country_Reference_OPM_Country_Code": [
+        "US",
+        "US"
+      ],
+      "wd:Country_Reference_ISO_3166-1_Numeric-3_Code": [
+        "840",
+        "840"
+      ],
+      "wd:Country_Region_Reference_WID": [
+        "ec3d210e4240442e99a28fa70419aec5",
+        "ec3d210e4240442e99a28fa70419aec5"
+      ],
+      "wd:Country_Region_Reference_Country_Region_ID": [
+        "USA-CA",
+        "USA-CA"
+      ],
+      "wd:Country_Region_Reference_ISO_3166-2_Code": [
+        "CA",
+        "CA"
+      ],
+      "wd:Country_Region_Reference_ISO_3166-2_Country-Region_Code": [
+        "US-CA",
+        "US-CA"
+      ],
+      "wd:Country_Region_Reference_OPM_Country_Subdivision_Code": [
+        "US-CA",
+        "US-CA"
+      ],
+      "wd:Address_Reference_WID": [
+        "4e2afab661ef01bd31e88dd5ed1457f4",
+        "4e2afab661ef01bd31e88dd5ed1457f4"
+      ],
+      "wd:Address_Reference_Address_ID": [
+        "ADDRESS_REFERENCE-3-13067610",
+        "ADDRESS_REFERENCE-3-13067610"
+      ],
+      "wd:Sold_To_Customer_Reference_WID": [
+        "9844436666b7100501a2f31fff84a6c6"
+      ],
+      "wd:Sold_To_Customer_Reference_Customer_Reference_ID": [
+        "27324"
+      ],
+      "wd:Sold_To_Customer_Reference_Customer_ID": [
+        "27324"
+      ],
+      "wd:Worktags_Reference_WID": [
+        "735a8e93eece1075faedf2bb78807aee",
+        "9844436666b710053c6df73e547bddce",
+        "d02b5378d41d011e9e143127de65d932",
+        "9844436666b710053c6ddc724e65dd98",
+        "8e540ad852971059242fdb526822c7a9",
+        "9844436666b710053c6da9a17f52dd36",
+        "9844436666b710053c6dcdf6d643dd88"
+      ],
+      "wd:Worktags_Reference_Organization_Reference_ID": [
+        "CC_1040",
+        "RPA_036"
+      ],
+      "wd:Worktags_Reference_Cost_Center_Reference_ID": [
+        "CC_1040"
+      ],
+      "wd:Worktags_Reference_Custom_Worktag_2_ID": [
+        "MC"
+      ],
+      "wd:Worktags_Reference_Custom_Organization_Reference_ID": [
+        "RPA_036"
+      ],
+      "wd:Worktags_Reference_Custom_Worktag_3_ID": [
+        "Blended Hourly"
+      ],
+      "wd:Worktags_Reference_Custom_Worktag_08_ID": [
+        "COS"
+      ],
+      "wd:Worktags_Reference_Custom_Worktag_09_ID": [
+        "REV_GEN"
+      ],
+      "wd:Worktags_Reference_Custom_Worktag_4_ID": [
+        "IMP"
+      ],
+      "wd:Customer_Category_of_Bill_to_Customer_Reference_WID": [
+        "9844436666b71003559f4fa1661301cb"
+      ],
+      "wd:Customer_Category_of_Bill_to_Customer_Reference_Customer_Category_ID": [
+        "Business Services"
+      ],
+      "wd:Item_Reference_WID": [
+        "47ed074eabdc0109849a3022361536fd"
+      ],
+      "wd:Item_Reference_Sales_Item_ID": [
+        "Financial Reporting"
+      ],
+      "wd:Accounting_Category_Reference_WID": [
+        "47ed074eabdc0184d39f26523415a7f4"
+      ],
+      "wd:Accounting_Category_Reference_Revenue_Category_ID": [
+        "Valuation Services - Fixed Fee"
+      ],
+      "wd:Unit_of_Measure_Reference_WID": [
+        "9c5ef1aaea1c10506a65b069f3d779a8"
+      ],
+      "wd:Unit_of_Measure_Reference_UN_CEFACT_Common_Code_ID": [
+        "EA"
+      ]
+    },
+    {
+      "wd:Taxable_Document_for_Tax_Calculation_Reference_WID": [
+        "35e470ab1315900151b4aef6f4230000"
+      ],
+      "wd:Taxable_Document_for_Tax_Calculation_Reference_Customer_Invoice_Reference_ID": [
+        "CUSTOMER_INVOICE-6-723778"
+      ],
+      "wd:Company_Reference_WID": [
+        "dde36542331f1000b66f45813fbd0000",
+        "dde36542331f1000b66f45813fbd0000"
+      ],
+      "wd:Company_Reference_Organization_Reference_ID": [
+        "RRO",
+        "RRO"
+      ],
+      "wd:Company_Reference_Company_Reference_ID": [
+        "RRO",
+        "RRO"
+      ],
+      "wd:Currency_Reference_WID": [
+        "9e996ffdd3e14da0ba7275d5400bafd4"
+      ],
+      "wd:Currency_Reference_Currency_ID": [
+        "USD"
+      ],
+      "wd:Currency_Reference_Currency_Numeric_Code": [
+        "840"
+      ],
+      "wd:Third_Party_Tax_Document_Status_Reference_WID": [
+        "e264bc68581342baa70ab61bf71032fe"
+      ],
+      "wd:Third_Party_Tax_Document_Status_Reference_Document_Status_ID": [
+        "INCOMPLETE"
+      ],
+      "wd:Bill_To_Customer_Reference_WID": [
+        "9844436666b7100501a2f31fff84a6c6"
+      ],
+      "wd:Bill_To_Customer_Reference_Customer_Reference_ID": [
+        "27324"
+      ],
+      "wd:Bill_To_Customer_Reference_Customer_ID": [
+        "27324"
+      ],
+      "wd:Country_Reference_WID": [
+        "bc33aa3152ec42d4995f4791a106ed09",
+        "bc33aa3152ec42d4995f4791a106ed09"
+      ],
+      "wd:Country_Reference_ISO_3166-1_Alpha-2_Code": [
+        "US",
+        "US"
+      ],
+      "wd:Country_Reference_ISO_3166-1_Alpha-3_Code": [
+        "USA",
+        "USA"
+      ],
+      "wd:Country_Reference_OPM_Country_Code": [
+        "US",
+        "US"
+      ],
+      "wd:Country_Reference_ISO_3166-1_Numeric-3_Code": [
+        "840",
+        "840"
+      ],
+      "wd:Country_Region_Reference_WID": [
+        "ec3d210e4240442e99a28fa70419aec5",
+        "ec3d210e4240442e99a28fa70419aec5"
+      ],
+      "wd:Country_Region_Reference_Country_Region_ID": [
+        "USA-CA",
+        "USA-CA"
+      ],
+      "wd:Country_Region_Reference_ISO_3166-2_Code": [
+        "CA",
+        "CA"
+      ],
+      "wd:Country_Region_Reference_ISO_3166-2_Country-Region_Code": [
+        "US-CA",
+        "US-CA"
+      ],
+      "wd:Country_Region_Reference_OPM_Country_Subdivision_Code": [
+        "US-CA",
+        "US-CA"
+      ],
+      "wd:Address_Reference_WID": [
+        "4e2afab661ef01bd31e88dd5ed1457f4",
+        "4e2afab661ef01bd31e88dd5ed1457f4"
+      ],
+      "wd:Address_Reference_Address_ID": [
+        "ADDRESS_REFERENCE-3-13067610",
+        "ADDRESS_REFERENCE-3-13067610"
+      ],
+      "wd:Sold_To_Customer_Reference_WID": [
+        "9844436666b7100501a2f31fff84a6c6"
+      ],
+      "wd:Sold_To_Customer_Reference_Customer_Reference_ID": [
+        "27324"
+      ],
+      "wd:Sold_To_Customer_Reference_Customer_ID": [
+        "27324"
+      ],
+      "wd:Worktags_Reference_WID": [
+        "735a8e93eece1075faedf2bb78807aee",
+        "9844436666b710053c6df73e547bddce",
+        "d02b5378d41d011e9e143127de65d932",
+        "9844436666b710053c6ddc724e65dd98",
+        "8e540ad852971059242fdb526822c7a9",
+        "9844436666b710053c6da9a17f52dd36",
+        "9844436666b710053c6dcdf6d643dd88"
+      ],
+      "wd:Worktags_Reference_Organization_Reference_ID": [
+        "CC_1040",
+        "RPA_036"
+      ],
+      "wd:Worktags_Reference_Cost_Center_Reference_ID": [
+        "CC_1040"
+      ],
+      "wd:Worktags_Reference_Custom_Worktag_2_ID": [
+        "MC"
+      ],
+      "wd:Worktags_Reference_Custom_Organization_Reference_ID": [
+        "RPA_036"
+      ],
+      "wd:Worktags_Reference_Custom_Worktag_3_ID": [
+        "Blended Hourly"
+      ],
+      "wd:Worktags_Reference_Custom_Worktag_08_ID": [
+        "COS"
+      ],
+      "wd:Worktags_Reference_Custom_Worktag_09_ID": [
+        "REV_GEN"
+      ],
+      "wd:Worktags_Reference_Custom_Worktag_4_ID": [
+        "IMP"
+      ],
+      "wd:Customer_Category_of_Bill_to_Customer_Reference_WID": [
+        "9844436666b71003559f4fa1661301cb"
+      ],
+      "wd:Customer_Category_of_Bill_to_Customer_Reference_Customer_Category_ID": [
+        "Business Services"
+      ],
+      "wd:Item_Reference_WID": [
+        "47ed074eabdc0109849a3022361536fd"
+      ],
+      "wd:Item_Reference_Sales_Item_ID": [
+        "Financial Reporting"
+      ],
+      "wd:Accounting_Category_Reference_WID": [
+        "47ed074eabdc0184d39f26523415a7f4"
+      ],
+      "wd:Accounting_Category_Reference_Revenue_Category_ID": [
+        "Valuation Services - Fixed Fee"
+      ],
+      "wd:Unit_of_Measure_Reference_WID": [
+        "9c5ef1aaea1c10506a65b069f3d779a8"
+      ],
+      "wd:Unit_of_Measure_Reference_UN_CEFACT_Common_Code_ID": [
+        "EA"
+      ]
+    },
+    {
+      "wd:Taxable_Document_for_Tax_Calculation_Reference_WID": [
+        "3892a80e96519001485e8befceb00000"
+      ],
+      "wd:Taxable_Document_for_Tax_Calculation_Reference_Customer_Invoice_Reference_ID": [
+        "CUSTOMER_INVOICE-6-723783"
+      ],
+      "wd:Company_Reference_WID": [
+        "dde36542331f1000b66f45813fbd0000",
+        "dde36542331f1000b66f45813fbd0000"
+      ],
+      "wd:Company_Reference_Organization_Reference_ID": [
+        "RRO",
+        "RRO"
+      ],
+      "wd:Company_Reference_Company_Reference_ID": [
+        "RRO",
+        "RRO"
+      ],
+      "wd:Currency_Reference_WID": [
+        "9e996ffdd3e14da0ba7275d5400bafd4"
+      ],
+      "wd:Currency_Reference_Currency_ID": [
+        "USD"
+      ],
+      "wd:Currency_Reference_Currency_Numeric_Code": [
+        "840"
+      ],
+      "wd:Third_Party_Tax_Document_Status_Reference_WID": [
+        "e264bc68581342baa70ab61bf71032fe"
+      ],
+      "wd:Third_Party_Tax_Document_Status_Reference_Document_Status_ID": [
+        "INCOMPLETE"
+      ],
+      "wd:Bill_To_Customer_Reference_WID": [
+        "9844436666b7100501a2f31fff84a6c6"
+      ],
+      "wd:Bill_To_Customer_Reference_Customer_Reference_ID": [
+        "27324"
+      ],
+      "wd:Bill_To_Customer_Reference_Customer_ID": [
+        "27324"
+      ],
+      "wd:Country_Reference_WID": [
+        "bc33aa3152ec42d4995f4791a106ed09",
+        "bc33aa3152ec42d4995f4791a106ed09"
+      ],
+      "wd:Country_Reference_ISO_3166-1_Alpha-2_Code": [
+        "US",
+        "US"
+      ],
+      "wd:Country_Reference_ISO_3166-1_Alpha-3_Code": [
+        "USA",
+        "USA"
+      ],
+      "wd:Country_Reference_OPM_Country_Code": [
+        "US",
+        "US"
+      ],
+      "wd:Country_Reference_ISO_3166-1_Numeric-3_Code": [
+        "840",
+        "840"
+      ],
+      "wd:Country_Region_Reference_WID": [
+        "ec3d210e4240442e99a28fa70419aec5",
+        "ec3d210e4240442e99a28fa70419aec5"
+      ],
+      "wd:Country_Region_Reference_Country_Region_ID": [
+        "USA-CA",
+        "USA-CA"
+      ],
+      "wd:Country_Region_Reference_ISO_3166-2_Code": [
+        "CA",
+        "CA"
+      ],
+      "wd:Country_Region_Reference_ISO_3166-2_Country-Region_Code": [
+        "US-CA",
+        "US-CA"
+      ],
+      "wd:Country_Region_Reference_OPM_Country_Subdivision_Code": [
+        "US-CA",
+        "US-CA"
+      ],
+      "wd:Address_Reference_WID": [
+        "4e2afab661ef01bd31e88dd5ed1457f4",
+        "4e2afab661ef01bd31e88dd5ed1457f4"
+      ],
+      "wd:Address_Reference_Address_ID": [
+        "ADDRESS_REFERENCE-3-13067610",
+        "ADDRESS_REFERENCE-3-13067610"
+      ],
+      "wd:Sold_To_Customer_Reference_WID": [
+        "9844436666b7100501a2f31fff84a6c6"
+      ],
+      "wd:Sold_To_Customer_Reference_Customer_Reference_ID": [
+        "27324"
+      ],
+      "wd:Sold_To_Customer_Reference_Customer_ID": [
+        "27324"
+      ],
+      "wd:Worktags_Reference_WID": [
+        "735a8e93eece1075faedf2bb78807aee",
+        "9844436666b710053c6df73e547bddce",
+        "d02b5378d41d011e9e143127de65d932",
+        "9844436666b710053c6ddc724e65dd98",
+        "8e540ad852971059242fdb526822c7a9",
+        "9844436666b710053c6da9a17f52dd36",
+        "9844436666b710053c6dcdf6d643dd88"
+      ],
+      "wd:Worktags_Reference_Organization_Reference_ID": [
+        "CC_1040",
+        "RPA_036"
+      ],
+      "wd:Worktags_Reference_Cost_Center_Reference_ID": [
+        "CC_1040"
+      ],
+      "wd:Worktags_Reference_Custom_Worktag_2_ID": [
+        "MC"
+      ],
+      "wd:Worktags_Reference_Custom_Organization_Reference_ID": [
+        "RPA_036"
+      ],
+      "wd:Worktags_Reference_Custom_Worktag_3_ID": [
+        "Blended Hourly"
+      ],
+      "wd:Worktags_Reference_Custom_Worktag_08_ID": [
+        "COS"
+      ],
+      "wd:Worktags_Reference_Custom_Worktag_09_ID": [
+        "REV_GEN"
+      ],
+      "wd:Worktags_Reference_Custom_Worktag_4_ID": [
+        "IMP"
+      ],
+      "wd:Customer_Category_of_Bill_to_Customer_Reference_WID": [
+        "9844436666b71003559f4fa1661301cb"
+      ],
+      "wd:Customer_Category_of_Bill_to_Customer_Reference_Customer_Category_ID": [
+        "Business Services"
+      ],
+      "wd:Item_Reference_WID": [
+        "47ed074eabdc0109849a3022361536fd"
+      ],
+      "wd:Item_Reference_Sales_Item_ID": [
+        "Financial Reporting"
+      ],
+      "wd:Accounting_Category_Reference_WID": [
+        "47ed074eabdc0184d39f26523415a7f4"
+      ],
+      "wd:Accounting_Category_Reference_Revenue_Category_ID": [
+        "Valuation Services - Fixed Fee"
+      ],
+      "wd:Unit_of_Measure_Reference_WID": [
+        "9c5ef1aaea1c10506a65b069f3d779a8"
+      ],
+      "wd:Unit_of_Measure_Reference_UN_CEFACT_Common_Code_ID": [
+        "EA"
+      ]
+    }
   ]
 }

@@ -225,28 +225,7 @@ def extract_values_from_search(search_data):
 
     _Taxable_Document_for_Tax_Calculation_Reference = []
     _Company_Reference = []
-    _Document_Number = []
-    _Currency_Reference = []
-    _Document_Date = []
 
-    # Additional lists for other extracted fields
-    _Bill_To_Customer_Reference = []
-    _Sold_To_Customer_Reference = []
-    _Worktags_Reference = []
-    _Customer_Category_of_Bill_to_Customer_Reference = []
-    _Taxable_Document_Line_for_Tax_Calculation_Data = []
-    _Line_Reference_ID = []
-    _Company_Reference = []
-    _Item_Reference = []
-    _Accounting_Category_Reference = []
-    _Quantity = []
-    _Unit_Cost = []
-    _Extended_Amount = []
-    _Customer_Invoice_Line_for_Tax_Calculation_Data = []
-    _Supplier_Invoice_Line_for_Tax_Calculation_Data = []
-    _Supplier_Bill_To_Address_Data = []
-    _Address_Format_Type=[]
-    _Formatted_Address=[]
 
     # Step 5: Define helper functions for extracting and collecting WIDs
     def pick_wid(id_node, target_list):
@@ -295,8 +274,11 @@ def extract_values_from_search(search_data):
     for item in items:
         # Extract document reference WID
         doc_ref_node = item.get('wd:Taxable_Document_for_Tax_Calculation_Reference', {}).get('wd:ID')
+        print("Document Reference Node:", doc_ref_node)
         doc_wid = pick_wid(doc_ref_node, _Taxable_Document_for_Tax_Calculation_Reference)
-        doc_refs.append(doc_wid)
+        #doc_refs.append(doc_wid)
+        print("Document WID:", doc_ref_node)
+        collect_wids(doc_wid)
 
         # Collect all WIDs present in this document
         per_doc_wids = collect_wids(item)
@@ -308,10 +290,13 @@ def extract_values_from_search(search_data):
         header = item.get('wd:Taxable_Document_for_Tax_Calculation_Data', {}).get('wd:Taxable_Document_Header_for_Tax_Calculation_Data', {})
         comp_node = header.get('wd:Company_Reference', {}).get('wd:ID')
         comp_wid = pick_wid(comp_node, _Company_Reference)
-        company_ids.append(comp_wid)
+        collect_wids(comp_wid)
+        #company_ids.append(comp_wid)
 
         # Extract document metadata
-        document_numbers.append(header.get('wd:Document_Number'))
+        document_numbers= header.get('wd:Document_Number')
+        collect_wids(document_numbers)
+
         curr_node = header.get('wd:Currency_Reference', {}).get('wd:ID')
         currency = None
         if isinstance(curr_node, list):
@@ -324,19 +309,12 @@ def extract_values_from_search(search_data):
                         currency = e.get('#text'); break
         elif isinstance(curr_node, dict):
             currency = curr_node.get('#text')
-        currency_codes.append(currency)
+        #currency_codes.append(currency)
+        collect_wids(currency)
 
-        document_dates.append(header.get('wd:Document_Date'))
-
-        # Extract supplier invoice information
-        supplier_hdr = header.get('wd:Supplier_Invoice_Header_for_Tax_Calculation_Data', {})
-        supplier_invoice_numbers.append(supplier_hdr.get('wd:Supplier_Invoice_Number'))
-        entered_tax_amounts.append(supplier_hdr.get('wd:Entered_Tax_Amount'))
-        amount_inclusive_of_taxes.append(supplier_hdr.get('wd:Amount_Inclusive_of_Tax'))
-
-        # Extract line reference
-        line = item.get('wd:Taxable_Document_Line_for_Tax_Calculation_Data', {})
-        line_refs.append(line.get('wd:Line_Reference_ID'))
+        document_Date = header.get('wd:Document_Date')
+        collect_wids(document_Date)
+        #document_dates.append(header.get('wd:Document_Date'))
 
     # Step 7: Assign extracted values to module-level variables
     global document_reference, taxable_document_line_reference, company_reference, tax_rate_taxable_amount, tax_rate_tax_amount
@@ -348,21 +326,21 @@ def extract_values_from_search(search_data):
     global document_wids, all_wids
     document_wids = document_wids_local if 'document_wids_local' in locals() else []
     seen = set()
-    all_wids = []
+#    all_wids = []
     for lst in document_wids:
         for w in lst:
             if w and w not in seen:
                 seen.add(w)
-                all_wids.append(w)
+#                all_wids.append(w)
 
     # Step 9: Expose additional extracted fields
-    global extracted_document_number, extracted_currency, extracted_document_date, extracted_supplier_invoice_number, extracted_entered_tax_amount, extracted_amount_inclusive_of_tax
-    extracted_document_number = document_numbers
-    extracted_currency = currency_codes
-    extracted_document_date = document_dates
-    extracted_supplier_invoice_number = supplier_invoice_numbers
-    extracted_entered_tax_amount = entered_tax_amounts
-    extracted_amount_inclusive_of_tax = amount_inclusive_of_taxes
+#    global extracted_document_number, extracted_currency, extracted_document_date, extracted_supplier_invoice_number, extracted_entered_tax_amount, extracted_amount_inclusive_of_tax
+#    extracted_document_number = document_numbers
+#    extracted_currency = currency_codes
+#    extracted_document_date = document_dates
+#    extracted_supplier_invoice_number = supplier_invoice_numbers
+#    extracted_entered_tax_amount = entered_tax_amounts
+#    extracted_amount_inclusive_of_tax = amount_inclusive_of_taxes
 
     # Step 10: Print a quick summary of extracted values
     print("Extracted document_reference (WID) count:", len(document_reference))
@@ -371,17 +349,17 @@ def extract_values_from_search(search_data):
 
     # Step 11: Return extracted data as a dictionary
     return {
-        'document_reference': document_reference,
-        'taxable_document_line_reference': taxable_document_line_reference,
-        'company_reference': company_reference,
+#        'document_reference': document_reference,
+#        'taxable_document_line_reference': taxable_document_line_reference,
+#        'company_reference': company_reference,
         'document_wids': document_wids,
-        'all_wids': all_wids,
-        'document_number': extracted_document_number,
-        'currency': extracted_currency,
-        'document_date': extracted_document_date,
-        'supplier_invoice_number': extracted_supplier_invoice_number,
-        'entered_tax_amount': extracted_entered_tax_amount,
-        'amount_inclusive_of_tax': extracted_amount_inclusive_of_tax
+#        'all_wids': all_wids,
+#        'document_number': extracted_document_number,
+#        'currency': extracted_currency,
+#        'document_date': extracted_document_date,
+#        'supplier_invoice_number': extracted_supplier_invoice_number,
+#        'entered_tax_amount': extracted_entered_tax_amount,
+#        'amount_inclusive_of_tax': extracted_amount_inclusive_of_tax
     }
 
 # --- Transform Data ---
@@ -448,7 +426,10 @@ def main():
         print('Failed to persist extracted values:', e)
     # Now build and post an import per document id
     process_ids = []
-    for doc_id in extracted['document_reference']:
+    counter = 0
+    for doc_id in extracted['document_wids']:
+        print("Processing document WID:", counter)
+        counter += 1
         if not doc_id:
             print('Skipping empty document id')
             process_ids.append(None)
